@@ -29,11 +29,6 @@ img {
 }
 
 /* ---------- REUSABLE CSS CLASSES ---------- */
-.section-container {
-  max-width: 120rem;
-  padding: 0 3.2rem;
-  margin: 0 auto;
-}
 
 .grid {
   display: grid;
@@ -97,11 +92,11 @@ img {
 }
 
 .btn--primary {
-  background-color: #e67e22;
+  background-color: #5dc4bb;
 }
 
 .btn--primary:hover {
-  background-color: #cf711f;
+  background-color: #387670;
 }
 
 .btn--secondary {
@@ -124,12 +119,12 @@ img {
   color: #333;
 }
 
-.heading-primary {
+/* .heading-primary {
   font-size: 5.2rem;
   line-height: 1.05;
 
   margin-bottom: 3.2rem;
-}
+} */
 
 .heading-secondary {
   font-size: 4.4rem;
@@ -157,21 +152,137 @@ strong {
   font-weight: 600;
 }
 
-.link {
-  display: inline-block;
-  text-decoration: none;
-  color: #e67e22;
-  border-bottom: 1px solid currentColor;
-  padding: 0.2rem;
+.header {
+  width: 100%;
+  height: 8rem;
 
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  position: relative;
+  z-index: 100;
+
+  padding: 0 2.5rem;
+}
+
+.nav {
+  position: relative;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  /* background-color: rgba(245, 245, 245, 0.9); */
+  background-color: rgba(206, 237, 235, 0.9);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  z-index: 100;
+
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.nav-list {
+  position: relative;
+
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 2.5rem;
+}
+
+.nav-link {
+  color: #333;
+}
+
+.main-nav-link.nav-cta {
+  padding: 1.2rem 2.4rem;
+  border-radius: 1rem;
+
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* ---------- HERO ---------- */
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.people-imgs {
+  display: flex;
+}
+
+.people-imgs img {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+
+  border: 3px solid #9edcd6;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  margin-top: 10rem;
+  padding: 12.8rem 2.5rem;
+  border-top: 1px solid #ddd;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.footer-link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
   transition: all 0.3s;
 }
 
-.link:hover {
-  color: #cf711f;
-  border-bottom: 1px solid transparent;
+.footer-link:hover {
+  color: #555;
 }
 
-.center-text {
-  text-align: center;
+.footer-nav {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
 }
