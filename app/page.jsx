@@ -5,21 +5,21 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section class="bg-primaryLighter pt-[3rem] pb-[6rem] ">
-        <div class="max-w-[120rem] py-[3rem] mx-auto flex flex-col gap-40 px-[2rem] md:flex-row xl:px-0 lg:gap-10">
-          <div class="text-center md:text-left md:w-full">
-            <h1 class="heading-primary text-[3.5rem] mb-10 lg:text-[5.2rem] lg:mb-[3.2rem]">
+      <section className="bg-primaryLighter pt-[3rem] pb-[6rem] ">
+        <div className="max-w-[120rem] py-[3rem] mx-auto flex flex-col gap-40 px-[2rem] md:flex-row xl:px-0 lg:gap-10">
+          <div className="text-center md:text-left md:w-full">
+            <h1 className="heading-primary text-[3.5rem] mb-10 lg:text-[5.2rem] lg:mb-[3.2rem]">
               Mental Health & Well-being in the Workplace
             </h1>
-            <p class="hero-description">
+            <p className="hero-description">
               Unlocking Peak Performance: Nurturing Mental Health and Well-being
               in the Workplace. Explore the vital link between mental well-being
               and workplace productivity in this insightful examination of
               modern work culture.
             </p>
 
-            <div class="mt-10 flex flex-col items-center md:items-start lg:flex-row lg:items-center lg:gap-20 gap-3 mb-10">
-              <div class="people-imgs">
+            <div className="mt-10 flex flex-col items-center md:items-start lg:flex-row lg:items-center lg:gap-20 gap-3 mb-10">
+              <div className="people-imgs">
                 <Image
                   src="/assets/images/home/customer-1.webp"
                   alt="Veezen Client"
@@ -214,6 +214,169 @@ export default function Home() {
               height={450}
               className="object-contain lg:w-[600px] "
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing */}
+      <section
+        className="pt-[2.4rem] pb-[6.4rem] lg:pt-[4.8rem] lg:pb-[9.6rem]"
+        id="pricing"
+      >
+        <div className="max-w-[120rem] py-[3rem] mx-auto px-[2rem] xl:px-0">
+          <span className="subheading">PRICING</span>
+          <h2 className="heading-secondary">
+            Start Your Journey With Us Today
+          </h2>
+        </div>
+
+        {/* <div className="container grid grid--2-cols margin-bottom-md">
+          <div className="pricing-plan pricing-plan--starter">
+            <header className="plan-header">
+              <p className="plan-name">Starter</p>
+              <p className="plan-price">
+                <span>$</span>399
+              </p>
+              <p className="plan-text">per month. That's just $13 per meal</p>
+            </header>
+
+            <ul className="list">
+              <li className="list-item">
+                <ion-icon
+                  className="list-icon"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>1 meal per day</span>
+              </li>
+
+              <li className="list-item">
+                <ion-icon
+                  className="list-icon"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Order from 11am and 9pm</span>
+              </li>
+
+              <li className="list-item">
+                <ion-icon
+                  className="list-icon"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Delivery is free</span>
+              </li>
+
+              <li className="list-item">
+                <ion-icon
+                  className="list-icon plan-icon"
+                  name="close-outline"
+                ></ion-icon>
+              </li>
+            </ul>
+
+            <div className="plan-sign-up">
+              <a href="#" className="btn btn--primary">
+                Start eating well
+              </a>
+            </div>
+          </div>
+
+          <div className="pricing-plan pricing-plan--complete">
+            <header className="plan-header">
+              <p className="plan-name">Complete</p>
+              <p className="plan-price">
+                <span>$</span>649
+              </p>
+              <p className="plan-text">per month. That's just $13 per meal</p>
+            </header>
+
+            <ul className="list">
+              <li className="list-item">
+                <ion-icon
+                  className="list-icon"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>
+                  <strong>2 meals</strong> meals per day
+                </span>
+              </li>
+
+              <li className="list-item">
+                <ion-icon
+                  className="list-icon"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>
+                  Order <strong>24/7</strong>
+                </span>
+              </li>
+
+              <li className="list-item">
+                <ion-icon
+                  className="list-icon"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Delivery is free</span>
+              </li>
+
+              <li className="list-item">
+                <ion-icon
+                  className="list-icon"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Get access to latest recipes</span>
+              </li>
+            </ul>
+
+            <div className="plan-sign-up">
+              <a href="#" className="btn btn--primary">
+                Start eating well
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="container grid">
+          <aside className="plan-details">
+            Prices include all applicable taxes. You can cancel at any time.
+            Both plans include the following:
+          </aside>
+        </div> */}
+
+        <div className="max-w-[120rem] py-[3rem] mx-auto px-[2rem] xl:px-0 grid grid--4-cols">
+          <div className="feature">
+            <img className="feature-icon" src="/assets/images/home/icon.svg" />
+            <p className="feature-title">Peace Again!</p>
+            <p className="feature-text">
+              Our subscriptions cover 365 days per year, even including major
+              holidays.
+            </p>
+          </div>
+
+          <div className="feature">
+            <img className="feature-icon" src="/assets/images/home/icon.svg" />
+            <p className="feature-title">Peace Again!</p>
+            <p className="feature-text">
+              Our cooks only use local, fresh, and organic products to prepare
+              your meals.
+            </p>
+          </div>
+
+          <div className="feature">
+            <img className="feature-icon" src="/assets/images/home/icon.svg" />
+            <p className="feature-title">Peace Again!</p>
+            <p className="feature-text">
+              All our partners only use reusable containers to package all your
+              meals.
+            </p>
+          </div>
+
+          <div className="feature">
+            <img className="feature-icon" src="/assets/images/home/icon.svg" />
+            <p className="feature-title">Peace Again!</p>
+            <p className="feature-text">
+              Going on vacation? Just pause your subscription, and we refund
+              unused days.
+            </p>
           </div>
         </div>
       </section>

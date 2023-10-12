@@ -273,6 +273,29 @@ strong {
   line-height: 1.8;
 }
 
+/* Features */
+.feature-icon {
+  color: #387670;
+  height: 6rem;
+  width: 6rem;
+  margin-bottom: 3.2rem;
+  background-color: #eff9f8;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
 /* ---------- FOOTER ---------- */
 .footer {
   margin-top: 10rem;
