@@ -19,12 +19,48 @@ export default function Home() {
 
             <div class="mt-10 flex flex-col items-center md:items-start lg:flex-row lg:items-center lg:gap-20 gap-3 mb-10">
               <div class="people-imgs">
-                <img src="./assets/images/customers/customer-1.jpg" alt="" />
-                <img src="./assets/images/customers/customer-2.jpg" alt="" />
-                <img src="./assets/images/customers/customer-3.jpg" alt="" />
-                <img src="./assets/images/customers/customer-4.jpg" alt="" />
-                <img src="./assets/images/customers/customer-5.jpg" alt="" />
-                <img src="./assets/images/customers/customer-6.jpg" alt="" />
+                <Image
+                  src="/assets/images/home/customer-1.webp"
+                  alt="Veezen Client"
+                  width={25}
+                  height={25}
+                  className="object-contain"
+                />
+                <Image
+                  src="/assets/images/home/customer-2.webp"
+                  alt="Veezen Client"
+                  width={25}
+                  height={25}
+                  className="object-contain"
+                />
+                <Image
+                  src="/assets/images/home/customer-3.webp"
+                  alt="Veezen Client"
+                  width={25}
+                  height={25}
+                  className="object-contain"
+                />
+                <Image
+                  src="/assets/images/home/customer-4.webp"
+                  alt="Veezen Client"
+                  width={25}
+                  height={25}
+                  className="object-contain"
+                />
+                <Image
+                  src="/assets/images/home/customer-5.webp"
+                  alt="Veezen Client"
+                  width={25}
+                  height={25}
+                  className="object-contain"
+                />
+                <Image
+                  src="/assets/images/home/customer-6.webp"
+                  alt="Veezen Client"
+                  width={25}
+                  height={25}
+                  className="object-contain"
+                />
               </div>
 
               <p class="text-[1.4rem] font-semibold">
@@ -39,7 +75,7 @@ export default function Home() {
 
           <div class="text-center self-center md:w-full">
             <Image
-              src="/assets/images/home/hero/hero.svg"
+              src="/assets/images/home/hero.svg"
               width={450}
               height={450}
               className="object-contain lg:w-[600px] "
