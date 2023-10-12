@@ -129,7 +129,7 @@ img {
 .heading-secondary {
   font-size: 4.4rem;
   line-height: 1.2;
-  margin-bottom: 9.6rem;
+  /* margin-bottom: 9.6rem; */
 }
 
 .heading-tertiary {
@@ -142,7 +142,7 @@ img {
   display: block;
   font-size: 1.6rem;
   font-weight: 600;
-  color: #cf711f;
+  color: #387670;
   text-transform: uppercase;
   letter-spacing: 0.75px;
   margin-bottom: 1.6rem;
@@ -245,6 +245,34 @@ strong {
   border: 3px solid #9edcd6;
 }
 
+/* Clients */
+.logo {
+  width: 100%;
+
+  filter: brightness(0);
+  opacity: 0.5;
+  transition: 0.3s;
+  -webkit-filter: brightness(0);
+}
+
+.logo:hover {
+  opacity: 1;
+  filter: brightness(100%);
+}
+
+/* How it works */
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
 /* ---------- FOOTER ---------- */
 .footer {
   margin-top: 10rem;
@@ -286,3 +314,5 @@ strong {
   flex-direction: column;
   gap: 2.4rem;
 }
+
+/* ---------- BREAKPOINTS ---------- */
