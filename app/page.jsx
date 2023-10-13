@@ -7,9 +7,9 @@ import { useEffect } from "react";
 import Question from "@/public/assets/images/home/question.svg";
 
 export default function Home() {
-  useEffect(() => {
-    import("preline");
-  }, []);
+  // useEffect(() => {
+  //   import("preline");
+  // }, []);
 
   return (
     <>
@@ -17,7 +17,7 @@ export default function Home() {
       <section className="bg-primaryLighter pt-[8rem] pb-[6rem] lg:pt-[10rem]">
         <div className="max-w-[120rem] py-[3rem] mx-auto flex flex-col gap-40 px-[2rem] md:flex-row xl:px-0 lg:gap-10">
           <div className="text-center md:text-left md:w-full">
-            <h1 className="heading-primary text-[3.5rem] mb-10 lg:text-[5.2rem] lg:mb-[3.2rem]">
+            <h1 className="heading-primary text-[5.2rem] mb-[3.2rem] ">
               Mental Health & Well-being in the Workplace
             </h1>
             <p className="hero-description">
@@ -97,7 +97,7 @@ export default function Home() {
       {/* Clients */}
       <section className="pt-[2.4rem] pb-[6.4rem] lg:pt-[4.8rem]  ">
         <div className="max-w-[120rem] py-[3rem] mx-auto px-[2rem] xl:px-0">
-          <h2 className="text-[30px] text-center font-semibold mb-20 md:mb-28">
+          <h2 className="text-[24px] text-center font-semibold mb-20 md:mb-28">
             Our Clients
           </h2>
 
@@ -132,13 +132,13 @@ export default function Home() {
       </section>
 
       {/* Services */}
-      <section className="pt-[2.4rem] pb-[6.4rem] lg:pt-[4.8rem] lg:pb-[9.6rem]">
+      <section className="py-[9.6rem]">
         <div className="max-w-[120rem] py-[3rem] mx-auto px-[2rem] xl:px-0">
           <span class="subheading">How it works</span>
           <h2 class="heading-secondary">How can we help you?</h2>
         </div>
 
-        <div class="max-w-[120rem] py-[3rem] mx-auto px-[2rem] xl:px-0 grid grid--2-cols grid--center-v">
+        <div class="max-w-[120rem] py-[3rem] mx-auto px-[2rem] xl:px-0 grid grid-cols-1 md:grid-cols-2 grid--center-v">
           <div class="step-text-box">
             <p class="step-number">01</p>
             <h3 class="heading-tertiary">Assessment and Support Evaluation</h3>
@@ -201,17 +201,19 @@ export default function Home() {
       </section>
 
       {/* About */}
-      <section class="bg-primaryLighter pt-[3rem] pb-[6rem] ">
+      <section class="bg-primaryLighter pt-[3.2rem] pb-[6.4rem] ">
         <div class="max-w-[120rem] py-[3rem] mx-auto flex flex-col gap-40 px-[2rem] md:flex-row xl:px-0 lg:gap-10">
           <div class="text-center md:text-left md:w-full">
-            <h2 class="heading-secondary mb-8">Get to know about us</h2>
-            <p class="hero-description">
+            <h2 class="heading-secondary" style={{ marginBottom: 0 }}>
+              Get to know about us
+            </h2>
+            <p class="hero-description mt-10">
               Veezen: Shaping Workplace Well-being. We specialize in
               transforming workplaces into nurturing, mental-health-focused
               environments, fostering employee happiness and business success.
             </p>
 
-            <Link href="#meals" class="btn btn--primary">
+            <Link href="/about-us" class="btn btn--primary">
               Learn more
             </Link>
           </div>
@@ -351,8 +353,8 @@ export default function Home() {
           </aside>
         </div> */}
 
-        <div className="max-w-[120rem] py-[3rem] mx-auto px-[2rem] xl:px-0 grid grid--4-cols">
-          <div className="feature">
+        <div className="max-w-[120rem] py-[3rem] mx-auto px-[2rem] xl:px-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <img className="feature-icon" src="/assets/images/home/icon.svg" />
             <p className="feature-title">Peace Again!</p>
             <p className="feature-text">
@@ -361,7 +363,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="feature">
+          <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <img className="feature-icon" src="/assets/images/home/icon.svg" />
             <p className="feature-title">Peace Again!</p>
             <p className="feature-text">
@@ -370,7 +372,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="feature">
+          <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <img className="feature-icon" src="/assets/images/home/icon.svg" />
             <p className="feature-title">Peace Again!</p>
             <p className="feature-text">
@@ -379,7 +381,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="feature">
+          <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <img className="feature-icon" src="/assets/images/home/icon.svg" />
             <p className="feature-title">Peace Again!</p>
             <p className="feature-text">
@@ -391,8 +393,8 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="bg-primaryLight grid-cols-[1.5fr_1fr] items-center grid">
-        <div className="p-[9.6rem]">
+      <section className="bg-primaryLight lg:grid-cols-[55fr_45fr] lg:items-center grid pt-[4.6rem] pb-[6.2rem] ">
+        <div className="p-[6rem]">
           <span className="subheading">Testimonials</span>
           <h2 className="heading-secondary">
             Healing Words Testimonials from Veezen Clients
@@ -465,7 +467,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="gallery">
+        <div className="gallery place-items-center">
           <figure className="gallery-item">
             <img
               src="./assets/images/gallery/gallery-1.webp"
@@ -742,14 +744,17 @@ export default function Home() {
 
       {/* Contact Us */}
       <section className=" bg-primaryDark">
-        <div className="grid grid-cols-2">
+        <div className="grid md:grid-cols-2">
           {/* Form */}
-          <div className="px-[2rem] w-full pt-[4.6rem] pb-[9.6rem] ">
-            <div className="mb-20">
-              <h2 className="text-7xl text-white font-semibold mb-6">
+          <div className="px-[2rem] w-full pt-[9.6rem] pb-[6rem] ">
+            <div className="mb-[10rem] md:mb-[8rem] ">
+              <h2
+                className="heading-secondary"
+                style={{ color: "white", marginBottom: 0 }}
+              >
                 Get in Touch With Us
               </h2>
-              <p className="text-2xl text-[#eee]">
+              <p className="text-[2rem] mt-[2rem] text-[#eee]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Blanditiis a sed, consectetur mollitia quisquam itaque. Quam
                 vitae fugiat aut doloremque aperiam sapiente incidunt eos
@@ -770,7 +775,7 @@ export default function Home() {
               </div>
 
               <div>
-                <label for="last-name">Last Name</label>
+                <label htmlFor="last-name">Last Name</label>
                 <input
                   name="last-name"
                   id="last-name"
@@ -781,7 +786,7 @@ export default function Home() {
               </div>
 
               <div>
-                <label for="phone">Phone</label>
+                <label htmlFor="phone">Phone</label>
                 <input
                   name="phone"
                   id="phone"
@@ -792,7 +797,7 @@ export default function Home() {
               </div>
 
               <div>
-                <label for="email">Email address</label>
+                <label htmlFor="email">Email address</label>
                 <input
                   name="email"
                   id="email"
@@ -803,7 +808,7 @@ export default function Home() {
               </div>
 
               <div className="col-span-2">
-                <label for="message">Message</label>
+                <label htmlFor="message">Message</label>
                 <textarea
                   name="message"
                   id="message"
@@ -825,8 +830,8 @@ export default function Home() {
 
           {/* Image */}
           <div className="contact-img--container">
-            <div className="w-full h-full flex relative justify-center items-center px-[2rem]">
-              <p className="p-[1rem] text-[4rem] text-white border border-white leading-snug">
+            <div className="w-full h-full flex relative justify-center items-center px-[2rem] py-[9.6rem] ">
+              <p className="p-[1rem] text-[4rem] text-white border border-white leading-snug rounded-[1rem] md:p-[2rem] ">
                 "Prioritizing mental health and well-being in the workplace is
                 not just a compassionate act; it's an essential investment in
                 the overall success, productivity, and happiness of your team. A

@@ -114,7 +114,6 @@ img {
 .heading-tertiary {
   font-weight: 700;
   letter-spacing: -0.75px;
-  /* color: #45260a; */
   color: #333;
 }
 
@@ -263,7 +262,7 @@ strong {
 }
 
 .step-description {
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 1.8;
 }
 
@@ -350,7 +349,7 @@ strong {
 
 .cta-form label {
   display: block;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 500;
   margin-bottom: 1.2rem;
   color: #eee;
@@ -420,3 +419,16 @@ strong {
 }
 
 /* ---------- BREAKPOINTS ---------- */
+/* 1200px */
+@media screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/* 940px */
+@media screen and (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+}
