@@ -1,7 +1,16 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
+
+import Question from "@/public/assets/images/home/question.svg";
 
 export default function Home() {
+  useEffect(() => {
+    import("preline");
+  }, []);
+
   return (
     <>
       {/* Hero */}
@@ -377,6 +386,436 @@ export default function Home() {
               Going on vacation? Just pause your subscription, and we refund
               unused days.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section class="bg-primaryLight grid-cols-[55fr_45fr] items-center grid">
+        <div class="p-[9.6rem]">
+          <span class="subheading">Testimonials</span>
+          <h2 class="heading-secondary">
+            Healing Words Testimonials from Veezen Clients
+          </h2>
+
+          <div class="testimonials">
+            <figure class="testimonial">
+              <img
+                src="/assets/images/home/dave.webp"
+                alt="Dave Image"
+                class="testimonial-img"
+              />
+
+              <blockquote class="testimonial-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quibusdam harum Quibusdam harum Quibusdam harum
+              </blockquote>
+
+              <p class="testimonial-name">&mdash; Dave Bryson</p>
+              <p class="text-[1.4rem] mt-2">Director Of HR</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                src="./assets/images/home/ben.webp"
+                alt="Dave Image"
+                class="testimonial-img"
+              />
+
+              <blockquote class="testimonial-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quibusdam harum Quibusdam harum Quibusdam harum
+              </blockquote>
+
+              <p class="testimonial-name">&mdash; Ben Hadley</p>
+              <p class="text-[1.4rem] mt-2">Director Of HR</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                src="./assets/images/home/steve.webp"
+                alt="Dave Image"
+                class="testimonial-img"
+              />
+
+              <blockquote class="testimonial-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quibusdam harum Quibusdam harum Quibusdam harum
+              </blockquote>
+
+              <p class="testimonial-name">&mdash; Steve Miller</p>
+              <p class="text-[1.4rem] mt-2">Director Of HR</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                src="./assets/images/home/hannah.webp"
+                alt="Dave Image"
+                class="testimonial-img"
+              />
+
+              <blockquote class="testimonial-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quibusdam harum Quibusdam harum Quibusdam harum
+              </blockquote>
+
+              <p class="testimonial-name">&mdash; Hannah Smith</p>
+              <p class="text-[1.4rem] mt-2">Director Of HR</p>
+            </figure>
+          </div>
+        </div>
+
+        <div className="gallery">
+          <figure className="gallery-item">
+            <img
+              src="./assets/images/gallery/gallery-1.webp"
+              alt="Photo of a happy client"
+              srcset=""
+            />
+          </figure>
+          <figure className="gallery-item">
+            <img
+              src="./assets/images/gallery/gallery-2.webp"
+              alt="Photo of a happy client"
+              srcset=""
+            />
+          </figure>
+          <figure className="gallery-item">
+            <img
+              src="./assets/images/gallery/gallery-3.webp"
+              alt="Photo of a happy client"
+              srcset=""
+            />
+          </figure>
+          <figure className="gallery-item">
+            <img
+              src="./assets/images/gallery/gallery-4.webp"
+              alt="Photo of a happy client"
+              srcset=""
+            />
+          </figure>
+          <figure className="gallery-item">
+            <img
+              src="./assets/images/gallery/gallery-5.webp"
+              alt="Photo of a happy client"
+              srcset=""
+            />
+          </figure>
+          <figure className="gallery-item">
+            <img
+              src="./assets/images/gallery/gallery-6.webp"
+              alt="Photo of a happy client"
+              srcset=""
+            />
+          </figure>
+          <figure className="gallery-item">
+            <img
+              src="./assets/images/gallery/gallery-7.webp"
+              alt="Photo of a happy client"
+              srcset=""
+            />
+          </figure>
+          <figure className="gallery-item">
+            <img
+              src="./assets/images/gallery/gallery-8.webp"
+              alt="Photo of a happy client"
+              srcset=""
+            />
+          </figure>
+          <figure className="gallery-item">
+            <img
+              src="./assets/images/gallery/gallery-9.webp"
+              alt="Photo of a happy client"
+              srcset=""
+            />
+          </figure>
+          <figure className="gallery-item">
+            <img
+              src="./assets/images/gallery/gallery-10.webp"
+              alt="Photo of a happy client"
+              srcset=""
+            />
+          </figure>
+          <figure className="gallery-item">
+            <img
+              src="./assets/images/gallery/gallery-11.webp"
+              alt="Photo of a happy client"
+              srcset=""
+            />
+          </figure>
+          <figure className="gallery-item">
+            <img
+              src="./assets/images/gallery/gallery-12.webp"
+              alt="Photo of a happy client"
+              srcset=""
+            />
+          </figure>
+        </div>
+      </section>
+
+      {/* Faq's */}
+      <section className="pt-[2.4rem] pb-[6.4rem] lg:pt-[4.8rem] lg:pb-[9.6rem]">
+        <div className="text-center">
+          <span className="subheading">FAQ</span>
+          <h2 className="heading-secondary">Frequently Asked Questions</h2>
+        </div>
+
+        <div className="max-w-5xl mx-auto px-[2rem] xl:px-0">
+          <div className="hs-accordion-group">
+            <div
+              className="hs-accordion active"
+              id="hs-basic-with-title-and-arrow-stretched-heading-one"
+            >
+              <button
+                className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-one"
+              >
+                <div className="flex items-center  gap-2">
+                  <Question className="w-10 h-10" />
+                  <h3 className="">What is Veezen?</h3>
+                </div>
+                <svg
+                  className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <svg
+                  className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+              <div
+                id="hs-basic-with-title-and-arrow-stretched-collapse-one"
+                className="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
+                aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one"
+              >
+                <p className="text-gray-800 dark:text-gray-200">
+                  <em>This is the third item's accordion body.</em> It is hidden
+                  by default, until the collapse plugin adds the appropriate
+                  classes that we use to style each element. These classes
+                  control the overall appearance, as well as the showing and
+                  hiding via CSS transitions.
+                </p>
+              </div>
+            </div>
+
+            <div
+              className="hs-accordion"
+              id="hs-basic-with-title-and-arrow-stretched-heading-two"
+            >
+              <button
+                className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-two"
+              >
+                <div className="flex items-center  gap-2">
+                  <Question className="w-10 h-10" />
+                  <h3 className="">What is Veezen?</h3>
+                </div>
+                <svg
+                  className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <svg
+                  className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+              <div
+                id="hs-basic-with-title-and-arrow-stretched-collapse-two"
+                className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-two"
+              >
+                <p className="text-gray-800 dark:text-gray-200">
+                  <em>This is the third item's accordion body.</em> It is hidden
+                  by default, until the collapse plugin adds the appropriate
+                  classes that we use to style each element. These classes
+                  control the overall appearance, as well as the showing and
+                  hiding via CSS transitions.
+                </p>
+              </div>
+            </div>
+
+            <div
+              className="hs-accordion"
+              id="hs-basic-with-title-and-arrow-stretched-heading-three"
+            >
+              <button
+                className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-three"
+              >
+                <div className="flex items-center  gap-2">
+                  <Question className="w-10 h-10" />
+                  <h3 className="">What is Veezen?</h3>
+                </div>
+                <svg
+                  className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <svg
+                  className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+
+              <div
+                id="hs-basic-with-title-and-arrow-stretched-collapse-three"
+                className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-three"
+              >
+                <p className="text-gray-800 dark:text-gray-200">
+                  <em>This is the third item's accordion body.</em> It is hidden
+                  by default, until the collapse plugin adds the appropriate
+                  classes that we use to style each element. These classes
+                  control the overall appearance, as well as the showing and
+                  hiding via CSS transitions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Us */}
+      <section className=" bg-primaryDark">
+        <div className="grid grid-cols-2">
+          {/* Form */}
+          <div className="px-[2rem] w-full pt-[4.6rem] pb-[9.6rem] ">
+            <h2 className="heading-secondary" style={{ color: "white" }}>
+              Get in Touch With Us
+            </h2>
+
+            <form action="" className="cta-form">
+              <div>
+                <label htmlFor="first-name">First Name</label>
+                <input
+                  name="first-name"
+                  id="first-name"
+                  type="text"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="last-name">Last Name</label>
+                <input
+                  name="last-name"
+                  id="last-name"
+                  type="text"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="phone">Phone</label>
+                <input
+                  name="phone"
+                  id="phone"
+                  type="text"
+                  placeholder="Phone Number"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="email">Email address</label>
+                <input
+                  name="email"
+                  id="email"
+                  type="email"
+                  placeholder="me@example.com"
+                  required
+                />
+              </div>
+
+              <div className="col-span-2">
+                <label for="message">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Your message"
+                  rows={6}
+                ></textarea>
+              </div>
+            </form>
+          </div>
+
+          {/* Image */}
+          <div className="contact-img--container">
+            <div className="w-full h-full flex relative justify-center items-center">
+              <p className="px-[2rem]">
+                "Prioritizing mental health and well-being in the workplace is
+                not just a compassionate act; it's an essential investment in
+                the overall success, productivity, and happiness of your team. A
+                mentally healthy workforce is a thriving workforce."
+              </p>
+            </div>
           </div>
         </div>
       </section>

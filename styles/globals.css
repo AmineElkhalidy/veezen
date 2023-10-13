@@ -129,7 +129,7 @@ img {
 .heading-secondary {
   font-size: 4.4rem;
   line-height: 1.2;
-  /* margin-bottom: 9.6rem; */
+  margin-bottom: 9.6rem;
 }
 
 .heading-tertiary {
@@ -296,9 +296,96 @@ strong {
   line-height: 1.8;
 }
 
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.testimonial-name {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+
+  padding: 1.6rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  display: block;
+  transition: all 0.4s;
+  width: 100%;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+.contact-img--container {
+  background-image: url("../public/assets/images/home/contact-img.webp");
+  background-size: cover;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  color: #eee;
+}
+
+.cta-form input,
+.cta-form textarea {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+
+  outline: none;
+  border: none;
+  background-color: #eff9f8;
+  border-radius: 9px;
+  font-family: inherit;
+  color: inherit;
+
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder,
+.cta-form textarea::placeholder {
+  color: #aaa;
+}
+
 /* ---------- FOOTER ---------- */
 .footer {
-  margin-top: 10rem;
+  /* margin-top: 10rem; */
   padding: 12.8rem 2.5rem;
   border-top: 1px solid #ddd;
 }
