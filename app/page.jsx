@@ -391,76 +391,76 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section class="bg-primaryLight grid-cols-[55fr_45fr] items-center grid">
-        <div class="p-[9.6rem]">
-          <span class="subheading">Testimonials</span>
-          <h2 class="heading-secondary">
+      <section className="bg-primaryLight grid-cols-[1.5fr_1fr] items-center grid">
+        <div className="p-[9.6rem]">
+          <span className="subheading">Testimonials</span>
+          <h2 className="heading-secondary">
             Healing Words Testimonials from Veezen Clients
           </h2>
 
-          <div class="testimonials">
-            <figure class="testimonial">
+          <div className="testimonials">
+            <figure className="testimonial">
               <img
                 src="/assets/images/home/dave.webp"
                 alt="Dave Image"
-                class="testimonial-img"
+                className="testimonial-img"
               />
 
-              <blockquote class="testimonial-text">
+              <blockquote className="testimonial-text">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Quibusdam harum Quibusdam harum Quibusdam harum
               </blockquote>
 
-              <p class="testimonial-name">&mdash; Dave Bryson</p>
-              <p class="text-[1.4rem] mt-2">Director Of HR</p>
+              <p className="testimonial-name">&mdash; Dave Bryson</p>
+              <p className="text-[1.4rem] mt-2">Director Of HR</p>
             </figure>
 
-            <figure class="testimonial">
+            <figure className="testimonial">
               <img
                 src="./assets/images/home/ben.webp"
                 alt="Dave Image"
-                class="testimonial-img"
+                className="testimonial-img"
               />
 
-              <blockquote class="testimonial-text">
+              <blockquote className="testimonial-text">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Quibusdam harum Quibusdam harum Quibusdam harum
               </blockquote>
 
-              <p class="testimonial-name">&mdash; Ben Hadley</p>
-              <p class="text-[1.4rem] mt-2">Director Of HR</p>
+              <p className="testimonial-name">&mdash; Ben Hadley</p>
+              <p className="text-[1.4rem] mt-2">Director Of HR</p>
             </figure>
 
-            <figure class="testimonial">
+            <figure className="testimonial">
               <img
                 src="./assets/images/home/steve.webp"
                 alt="Dave Image"
-                class="testimonial-img"
+                className="testimonial-img"
               />
 
-              <blockquote class="testimonial-text">
+              <blockquote className="testimonial-text">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Quibusdam harum Quibusdam harum Quibusdam harum
               </blockquote>
 
-              <p class="testimonial-name">&mdash; Steve Miller</p>
-              <p class="text-[1.4rem] mt-2">Director Of HR</p>
+              <p className="testimonial-name">&mdash; Steve Miller</p>
+              <p className="text-[1.4rem] mt-2">Director Of HR</p>
             </figure>
 
-            <figure class="testimonial">
+            <figure className="testimonial">
               <img
                 src="./assets/images/home/hannah.webp"
                 alt="Dave Image"
-                class="testimonial-img"
+                className="testimonial-img"
               />
 
-              <blockquote class="testimonial-text">
+              <blockquote className="testimonial-text">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Quibusdam harum Quibusdam harum Quibusdam harum
               </blockquote>
 
-              <p class="testimonial-name">&mdash; Hannah Smith</p>
-              <p class="text-[1.4rem] mt-2">Director Of HR</p>
+              <p className="testimonial-name">&mdash; Hannah Smith</p>
+              <p className="text-[1.4rem] mt-2">Director Of HR</p>
             </figure>
           </div>
         </div>
@@ -745,9 +745,17 @@ export default function Home() {
         <div className="grid grid-cols-2">
           {/* Form */}
           <div className="px-[2rem] w-full pt-[4.6rem] pb-[9.6rem] ">
-            <h2 className="heading-secondary" style={{ color: "white" }}>
-              Get in Touch With Us
-            </h2>
+            <div className="mb-20">
+              <h2 className="text-7xl text-white font-semibold mb-6">
+                Get in Touch With Us
+              </h2>
+              <p className="text-2xl text-[#eee]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis a sed, consectetur mollitia quisquam itaque. Quam
+                vitae fugiat aut doloremque aperiam sapiente incidunt eos
+                delectus.
+              </p>
+            </div>
 
             <form action="" className="cta-form">
               <div>
@@ -803,13 +811,22 @@ export default function Home() {
                   rows={6}
                 ></textarea>
               </div>
+
+              <div>
+                <button
+                  type="submit"
+                  className="px-[4.6rem] py-[1.8rem] bg-white rounded-[1rem] text-[1.6rem] text-primaryDark font-semibold mt-8 duration-300 hover:bg-primaryDark hover:text-white border border-primaryDark hover:border-white"
+                >
+                  Submit
+                </button>
+              </div>
             </form>
           </div>
 
           {/* Image */}
           <div className="contact-img--container">
-            <div className="w-full h-full flex relative justify-center items-center">
-              <p className="px-[2rem]">
+            <div className="w-full h-full flex relative justify-center items-center px-[2rem]">
+              <p className="p-[1rem] text-[4rem] text-white border border-white leading-snug">
                 "Prioritizing mental health and well-being in the workplace is
                 not just a compassionate act; it's an essential investment in
                 the overall success, productivity, and happiness of your team. A
