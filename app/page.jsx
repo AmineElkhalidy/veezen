@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-primaryLighter pt-[3rem] pb-[6rem] ">
+      <section className="bg-primaryLighter pt-[8rem] pb-[6rem] lg:pt-[10rem]">
         <div className="max-w-[120rem] py-[3rem] mx-auto flex flex-col gap-40 px-[2rem] md:flex-row xl:px-0 lg:gap-10">
           <div className="text-center md:text-left md:w-full">
             <h1 className="heading-primary text-[3.5rem] mb-10 lg:text-[5.2rem] lg:mb-[3.2rem]">
@@ -560,7 +560,7 @@ export default function Home() {
           <h2 className="heading-secondary">Frequently Asked Questions</h2>
         </div>
 
-        <div className="max-w-5xl mx-auto px-[2rem] xl:px-0">
+        {/* <div className="max-w-5xl mx-auto px-[2rem] xl:px-0">
           <div className="hs-accordion-group">
             <div
               className="hs-accordion active"
@@ -737,7 +737,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* Contact Us */}
