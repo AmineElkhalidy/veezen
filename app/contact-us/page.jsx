@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import Phone from "@/public/assets/images/contact/phone.svg";
 import Email from "@/public/assets/images/contact/email.svg";
-import Map from "@/public/assets/images/contact/Map.svg";
+import Map from "@/public/assets/images/contact/map.svg";
 
 const Contact = () => {
   return (
