@@ -235,14 +235,134 @@ export default function Home() {
 
       {/* Pricing */}
       <section className="py-[9.6rem] " id="pricing">
-        <div className="max-w-[120rem] py-[3rem] mx-auto px-[2rem] xl:px-0">
+        <div className="max-w-[120rem] py-[3rem] lg:py-0 mx-auto px-[2rem] xl:px-0  ">
           <span className="subheading">PRICING</span>
           <h2 className="heading-secondary">
             Start Your Journey With Us Today
           </h2>
         </div>
 
-        <div className="max-w-[120rem] py-[3rem] mx-auto px-[2rem] xl:px-0 d-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div className="max-w-[120rem] mx-auto px-[2rem] xl:px-0 grid sm:grid-cols-2 md:grid-cols-3 md:gap-[2.4rem] gap-[4.8rem]">
+          <div className="pricing-plan pricing-plan--starter md:w-full">
+            <div className="plan-header">
+              <p className="plan-name">VeeSession</p>
+              <p className="plan-price">
+                <span>£</span>60
+              </p>
+              <p className="plan-text mb-6">Every Week</p>
+
+              <div className="space-y-4">
+                <p className="plan-text">1 Session</p>
+                <p className="plan-text">Valid until cancelled</p>
+              </div>
+            </div>
+
+            <div className="plan-sign-up">
+              <a href="#" className="btn btn--primary">
+                Get Started
+              </a>
+            </div>
+          </div>
+
+          <div className="pricing-plan pricing-plan--starter md:w-full">
+            <div className="plan-header">
+              <p className="plan-name">VeeWorkshop</p>
+              <p className="plan-price">
+                <span>£</span>2000
+              </p>
+              <p className="plan-text mb-6">Every Week</p>
+
+              <div className="space-y-4">
+                <p className="plan-text">Workshop/20 employees pack</p>
+                <p className="plan-text">Valid until cancelled</p>
+              </div>
+            </div>
+
+            <div className="plan-sign-up">
+              <a href="#" className="btn btn--primary">
+                Get Started
+              </a>
+            </div>
+          </div>
+
+          <div className="pricing-plan pricing-plan--starter md:w-full">
+            <div className="plan-header">
+              <p className="plan-name">Veecare</p>
+              <p className="plan-price">
+                <span>£</span>2000
+              </p>
+              <p className="plan-text mb-6">Every Week</p>
+
+              <div className="space-y-4">
+                <p className="plan-text">Enquête & Well-being</p>
+                <p className="plan-text">Valid until cancelled</p>
+              </div>
+            </div>
+
+            <div className="plan-sign-up">
+              <a href="#" className="btn btn--primary">
+                Get Started
+              </a>
+            </div>
+          </div>
+
+          {/* <div className="pricing-plan pricing-plan--complete">
+            <header className="plan-header">
+              <p className="plan-name">Complete</p>
+              <p className="plan-price">
+                <span>$</span>649
+              </p>
+              <p className="plan-text">Every Week</p>
+              <p className="plan-text">1 session</p>
+            </header>
+
+            <ul className="list">
+              <li className="list-item">
+                <ion-icon
+                  className="list-icon"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>
+                  <strong>2 meals</strong> meals per day
+                </span>
+              </li>
+
+              <li className="list-item">
+                <ion-icon
+                  className="list-icon"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>
+                  Order <strong>24/7</strong>
+                </span>
+              </li>
+
+              <li className="list-item">
+                <ion-icon
+                  className="list-icon"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Delivery is free</span>
+              </li>
+
+              <li className="list-item">
+                <ion-icon
+                  className="list-icon"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Get access to latest recipes</span>
+              </li>
+            </ul>
+
+            <div className="plan-sign-up">
+              <a href="#" className="btn btn--primary">
+                Start eating well
+              </a>
+            </div>
+          </div> */}
+        </div>
+
+        <div className="max-w-[120rem] py-[3rem] mx-auto px-[2rem] xl:px-0 d-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-[9.6rem] ">
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <img className="feature-icon" src="/assets/images/home/icon.svg" />
             <p className="feature-title">Peace Again!</p>
@@ -655,7 +775,9 @@ export default function Home() {
 
             <form action="" className="cta-form">
               <div>
-                <label htmlFor="first-name">First Name</label>
+                <label className="text-[#eee] " htmlFor="first-name">
+                  First Name
+                </label>
                 <input
                   name="first-name"
                   id="first-name"
@@ -666,7 +788,9 @@ export default function Home() {
               </div>
 
               <div>
-                <label htmlFor="last-name">Last Name</label>
+                <label className="text-[#eee]" htmlFor="last-name">
+                  Last Name
+                </label>
                 <input
                   name="last-name"
                   id="last-name"
@@ -677,7 +801,9 @@ export default function Home() {
               </div>
 
               <div>
-                <label htmlFor="phone">Phone</label>
+                <label className="text-[#eee]" htmlFor="phone">
+                  Phone
+                </label>
                 <input
                   name="phone"
                   id="phone"
@@ -688,7 +814,9 @@ export default function Home() {
               </div>
 
               <div>
-                <label htmlFor="email">Email address</label>
+                <label className="text-[#eee]" htmlFor="email">
+                  Email address
+                </label>
                 <input
                   name="email"
                   id="email"
@@ -699,7 +827,9 @@ export default function Home() {
               </div>
 
               <div className="lg:col-span-2">
-                <label htmlFor="message">Message</label>
+                <label className="text-[#eee]" htmlFor="message">
+                  Message
+                </label>
                 <textarea
                   name="message"
                   id="message"

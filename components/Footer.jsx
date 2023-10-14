@@ -57,54 +57,35 @@ const Footer = () => {
         </div>
 
         <div>
-          <p className="footer-heading">Contact us</p>
+          <p className="footer-heading">Address</p>
 
           <address className="contacts">
-            <p className="address mb-2">
-              Bouzniqa, Casablanca - 43100, Morocco-Safi
+            <p className="mb-3">
+              Residence Chantimar, Rue N°3,
+              <br /> Les princesses II, Maarif extension,
+              <br /> Casablanca 20100, Morocco
             </p>
-            <p>
-              <a className="footer-link" href="tel:415-201-6370">
-                +21261111111
-              </a>
-              <br />
-              <a className="footer-link" href="mailto:contact@veezen.com">
-                contact@veezen.com
-              </a>
+            <p className="mb-3">
+              78, Avenue des champs-Elysées, 75008 Paris, France
             </p>
           </address>
         </div>
 
         <nav className="nav-col">
-          <p className="footer-heading mb-4">Links</p>
+          <p className="footer-heading mb-4">Contact</p>
+          <div className="flex flex-col gap-8">
+            <a className="footer-link" href="tel:415-201-6370">
+              +212 522 395 674
+            </a>
 
-          <ul className="footer-nav">
-            <li>
-              <Link className="footer-link" href="#">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link className="footer-link" href="#">
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link className="footer-link" href="#">
-                Ask for Quote
-              </Link>
-            </li>
-            <li>
-              <Link className="footer-link" href="#">
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link className="footer-link" href="#">
-                Contact Us
-              </Link>
-            </li>
-          </ul>
+            <a className="footer-link" href="tel:415-201-6370">
+              +212 661 855 855
+            </a>
+
+            <a className="footer-link" href="mailto:contact@veezen.com">
+              contact@veezen.com
+            </a>
+          </div>
         </nav>
 
         <nav className="nav-col">
