@@ -14,10 +14,10 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-primaryLighter pt-[8rem] pb-[6rem] lg:pt-[10rem]">
-        <div className="max-w-[120rem] py-[3rem] mx-auto flex flex-col gap-40 px-[2rem] md:flex-row xl:px-0 lg:gap-10">
+      <section className="bg-primaryLighter py-[8rem] lg:pt-[10rem]">
+        <div className="max-w-[120rem] py-[3rem] mx-auto flex flex-col gap-40 px-[2rem] md:flex-row xl:px-0 lg:gap-20">
           <div className="text-center md:text-left md:w-full">
-            <h1 className="heading-primary text-[5.2rem] mb-[3.2rem] ">
+            <h1 className="heading-primary text-[5.2rem] mb-[3.2rem]">
               Mental Health & Well-being in the Workplace
             </h1>
             <p className="hero-description">
@@ -83,12 +83,12 @@ export default function Home() {
             </Link>
           </div>
 
-          <div class="text-center self-center md:w-full">
+          <div class="self-center md:w-full">
             <Image
               src="/assets/images/home/hero.svg"
               width={450}
               height={450}
-              className="object-contain lg:w-[600px] "
+              className="w-full object-contain"
             />
           </div>
         </div>
@@ -138,7 +138,7 @@ export default function Home() {
           <h2 class="heading-secondary">How can we help you?</h2>
         </div>
 
-        <div class="max-w-[120rem] py-[3rem] mx-auto px-[2rem] xl:px-0 grid grid-cols-1 md:grid-cols-2 grid--center-v">
+        <div class="max-w-[120rem] py-[3rem] md:py-0 mx-auto px-[2rem] xl:px-0 d-grid grid-cols-1 md:grid-cols-2 grid--center-v">
           <div class="step-text-box">
             <p class="step-number">01</p>
             <h3 class="heading-tertiary">Assessment and Support Evaluation</h3>
@@ -157,6 +157,8 @@ export default function Home() {
               class="step-image"
             />
           </div>
+
+          <div className="mb-20 md:hidden"></div>
 
           <div class="step-image-box">
             <img
@@ -177,6 +179,8 @@ export default function Home() {
               their overall mental well-being.
             </p>
           </div>
+
+          <div className="mb-20 md:hidden"></div>
 
           <div class="step-text-box">
             <p class="step-number">03</p>
@@ -201,8 +205,8 @@ export default function Home() {
       </section>
 
       {/* About */}
-      <section class="bg-primaryLighter pt-[3.2rem] pb-[6.4rem] ">
-        <div class="max-w-[120rem] py-[3rem] mx-auto flex flex-col gap-40 px-[2rem] md:flex-row xl:px-0 lg:gap-10">
+      <section class="bg-primaryLighter py-[8rem]">
+        <div class="max-w-[120rem] py-[3rem] mx-auto flex flex-col gap-40 px-[2rem] md:flex-row xl:px-0 lg:gap-20">
           <div class="text-center md:text-left md:w-full">
             <h2 class="heading-secondary" style={{ marginBottom: 0 }}>
               Get to know about us
@@ -223,17 +227,14 @@ export default function Home() {
               src="/assets/images/home/hero.svg"
               width={450}
               height={450}
-              className="object-contain lg:w-[600px] "
+              className="object-contain w-full "
             />
           </div>
         </div>
       </section>
 
       {/* Pricing */}
-      <section
-        className="pt-[2.4rem] pb-[6.4rem] lg:pt-[4.8rem] lg:pb-[9.6rem]"
-        id="pricing"
-      >
+      <section className="py-[9.6rem] " id="pricing">
         <div className="max-w-[120rem] py-[3rem] mx-auto px-[2rem] xl:px-0">
           <span className="subheading">PRICING</span>
           <h2 className="heading-secondary">
@@ -241,119 +242,7 @@ export default function Home() {
           </h2>
         </div>
 
-        {/* <div className="container grid grid--2-cols margin-bottom-md">
-          <div className="pricing-plan pricing-plan--starter">
-            <header className="plan-header">
-              <p className="plan-name">Starter</p>
-              <p className="plan-price">
-                <span>$</span>399
-              </p>
-              <p className="plan-text">per month. That's just $13 per meal</p>
-            </header>
-
-            <ul className="list">
-              <li className="list-item">
-                <ion-icon
-                  className="list-icon"
-                  name="checkmark-outline"
-                ></ion-icon>
-                <span>1 meal per day</span>
-              </li>
-
-              <li className="list-item">
-                <ion-icon
-                  className="list-icon"
-                  name="checkmark-outline"
-                ></ion-icon>
-                <span>Order from 11am and 9pm</span>
-              </li>
-
-              <li className="list-item">
-                <ion-icon
-                  className="list-icon"
-                  name="checkmark-outline"
-                ></ion-icon>
-                <span>Delivery is free</span>
-              </li>
-
-              <li className="list-item">
-                <ion-icon
-                  className="list-icon plan-icon"
-                  name="close-outline"
-                ></ion-icon>
-              </li>
-            </ul>
-
-            <div className="plan-sign-up">
-              <a href="#" className="btn btn--primary">
-                Start eating well
-              </a>
-            </div>
-          </div>
-
-          <div className="pricing-plan pricing-plan--complete">
-            <header className="plan-header">
-              <p className="plan-name">Complete</p>
-              <p className="plan-price">
-                <span>$</span>649
-              </p>
-              <p className="plan-text">per month. That's just $13 per meal</p>
-            </header>
-
-            <ul className="list">
-              <li className="list-item">
-                <ion-icon
-                  className="list-icon"
-                  name="checkmark-outline"
-                ></ion-icon>
-                <span>
-                  <strong>2 meals</strong> meals per day
-                </span>
-              </li>
-
-              <li className="list-item">
-                <ion-icon
-                  className="list-icon"
-                  name="checkmark-outline"
-                ></ion-icon>
-                <span>
-                  Order <strong>24/7</strong>
-                </span>
-              </li>
-
-              <li className="list-item">
-                <ion-icon
-                  className="list-icon"
-                  name="checkmark-outline"
-                ></ion-icon>
-                <span>Delivery is free</span>
-              </li>
-
-              <li className="list-item">
-                <ion-icon
-                  className="list-icon"
-                  name="checkmark-outline"
-                ></ion-icon>
-                <span>Get access to latest recipes</span>
-              </li>
-            </ul>
-
-            <div className="plan-sign-up">
-              <a href="#" className="btn btn--primary">
-                Start eating well
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="container grid">
-          <aside className="plan-details">
-            Prices include all applicable taxes. You can cancel at any time.
-            Both plans include the following:
-          </aside>
-        </div> */}
-
-        <div className="max-w-[120rem] py-[3rem] mx-auto px-[2rem] xl:px-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div className="max-w-[120rem] py-[3rem] mx-auto px-[2rem] xl:px-0 d-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <img className="feature-icon" src="/assets/images/home/icon.svg" />
             <p className="feature-title">Peace Again!</p>
@@ -393,12 +282,14 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="bg-primaryLight lg:grid-cols-[55fr_45fr] lg:items-center grid pt-[4.6rem] pb-[6.2rem] ">
+      <section className="bg-primaryLight lg:grid-cols-[55fr_45fr] lg:items-center d-grid pt-[4.6rem] pb-[6.2rem] ">
         <div className="p-[6rem]">
-          <span className="subheading">Testimonials</span>
-          <h2 className="heading-secondary">
-            Healing Words Testimonials from Veezen Clients
-          </h2>
+          <div className="mb-40 lg:mb-0">
+            <span className="subheading">Testimonials</span>
+            <h2 className="heading-secondary">
+              Healing Words Testimonials from Veezen Clients
+            </h2>
+          </div>
 
           <div className="testimonials">
             <figure className="testimonial">
@@ -743,7 +634,7 @@ export default function Home() {
       </section>
 
       {/* Contact Us */}
-      <section className=" bg-primaryDark">
+      <section className=" bg-[#275A55] ">
         <div className="grid md:grid-cols-2">
           {/* Form */}
           <div className="px-[2rem] w-full pt-[9.6rem] pb-[6rem] ">
@@ -807,7 +698,7 @@ export default function Home() {
                 />
               </div>
 
-              <div className="col-span-2">
+              <div className="lg:col-span-2">
                 <label htmlFor="message">Message</label>
                 <textarea
                   name="message"
@@ -831,7 +722,7 @@ export default function Home() {
           {/* Image */}
           <div className="contact-img--container">
             <div className="w-full h-full flex relative justify-center items-center px-[2rem] py-[9.6rem] ">
-              <p className="p-[1rem] text-[4rem] text-white border border-white leading-snug rounded-[1rem] md:p-[2rem] ">
+              <p className="p-[2rem] text-[3rem] text-white border border-white leading-snug rounded-[1rem] md:p-[3rem] ">
                 "Prioritizing mental health and well-being in the workplace is
                 not just a compassionate act; it's an essential investment in
                 the overall success, productivity, and happiness of your team. A

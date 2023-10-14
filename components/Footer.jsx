@@ -10,7 +10,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <footer className="footer bg-primaryLighter">
-      <div className="section-container grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-[1.5fr_1.5fr_1fr_1fr]">
+      <div className="section-container d-grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-[1.5fr_1.5fr_1fr_1fr]">
         <div className="flex flex-col">
           <Link
             className="block text-[2.2rem] font-semibold text-[#333] mb-3"

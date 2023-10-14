@@ -1,4 +1,9 @@
 import React from "react";
+import Link from "next/link";
+
+import Phone from "@/public/assets/images/contact/phone.svg";
+import Email from "@/public/assets/images/contact/email.svg";
+import Map from "@/public/assets/images/contact/Map.svg";
 
 const Contact = () => {
   return (
@@ -14,26 +19,11 @@ const Contact = () => {
         </div>
       </div>
 
-      <section className="mt-20">
-        <div className="grid md:grid-cols-[2fr_1fr] ">
+      <section className="my-20">
+        <div className="grid md:grid-cols-[2fr_1fr]  px-[2rem]">
           {/* Form */}
-          <div className="px-[2rem] w-full pt-[9.6rem] pb-[6rem] ">
-            {/* <div className="mb-[10rem] md:mb-[8rem] ">
-              <h2
-                className="heading-secondary"
-                style={{ color: "white", marginBottom: 0 }}
-              >
-                Get in Touch With Us
-              </h2>
-              <p className="text-[2rem] mt-[2rem] text-[#eee]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Blanditiis a sed, consectetur mollitia quisquam itaque. Quam
-                vitae fugiat aut doloremque aperiam sapiente incidunt eos
-                delectus.
-              </p>
-            </div> */}
-
-            <form action="" className="cta-form">
+          <div className="py-[6rem]">
+            <form className="cta-form">
               <div>
                 <label htmlFor="first-name">First Name</label>
                 <input
@@ -78,9 +68,10 @@ const Contact = () => {
                 />
               </div>
 
-              <div className="col-span-2">
+              <div className="lg:col-span-2">
                 <label htmlFor="message">Message</label>
                 <textarea
+                  className="resize-none"
                   name="message"
                   id="message"
                   placeholder="Your message"
@@ -100,7 +91,54 @@ const Contact = () => {
           </div>
 
           {/* Social media */}
-          <div className=""></div>
+          <div className="space-y-10">
+            <div className="max-w-lg mx-auto h-[170px] rounded-[1rem] bg-primaryLighter duration-300 group hover:bg-primaryDark">
+              <div className="h-full  justify-center flex flex-col items-center gap-8">
+                <Phone className="w-16 h-16 text-primaryDark group-hover:text-white" />
+
+                <div className="group-hover:text-gray-200 ">
+                  <Link href="#" className="text-[1.4rem] ">
+                    +212611111111
+                  </Link>
+                  <br />
+                  <br />
+                  <Link href="#" className="text-[1.4rem] ">
+                    +212611111111
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="max-w-lg mx-auto h-[170px] rounded-[1rem] bg-primaryLighter duration-300 group hover:bg-primaryDark">
+              <div className="h-full  justify-center flex flex-col items-center gap-8">
+                <Email className="w-16 h-16 text-primaryDark group-hover:text-white" />
+
+                <div className="group-hover:text-gray-200">
+                  <Link href="#" className="text-[1.4rem] ">
+                    office@veezen.com
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="max-w-lg mx-auto h-[170px] rounded-[1rem] bg-primaryLighter duration-300 group hover:bg-primaryDark">
+              <div className="h-full  justify-center flex flex-col items-center gap-8">
+                <Map className="w-16 h-16 text-primaryDark group-hover:text-white" />
+
+                <div className="text-center px-[1rem] group-hover:text-gray-200">
+                  <Link href="#" className="text-[1.4rem]">
+                    Residence Chantimar, Rue N°3, Les princesses II, Maarif
+                    extension, Casablanca 20100, Morocco
+                  </Link>
+                  <br />
+                  <br />
+                  <Link href="#" className="text-[1.4rem] ">
+                    78, Avenue des champs-Elysées, 75008 Paris, France
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>
