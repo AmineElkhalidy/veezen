@@ -19,10 +19,10 @@ const Contact = () => {
         </div>
       </div>
 
-      <section className="my-20">
-        <div className="grid md:grid-cols-[2fr_1fr]  px-[2rem]">
+      <section className="my-20 max-w-[120rem] mx-auto px-[2rem] xl:px-0 ">
+        <div className="grid md:grid-cols-[2fr_1fr]">
           {/* Form */}
-          <div className="py-[6rem]">
+          <div>
             <form className="cta-form">
               <div>
                 <label htmlFor="first-name">First Name</label>
