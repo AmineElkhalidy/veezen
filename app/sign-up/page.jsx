@@ -3,7 +3,7 @@ import React from "react";
 const SignUp = () => {
   return (
     <section className="bg-gray-50 min-h-screen md:flex md:items-center md:flex-row-reverse">
-      <div className="flex w-full justify-center items-center px-[2rem]">
+      <div className="flex w-full justify-center items-center px-[2rem] md:px-0">
         <div className="w-full bg-white rounded-lg shadow-md md:mt-0 sm:max-w-md md:max-w-2xl lg:max-w-3xl xl:p-0 ">
           <div className="p-[2rem] space-y-4 md:space-y-6 sm:p-8">
             <a
