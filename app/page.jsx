@@ -2,14 +2,31 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import Question from "@/public/assets/images/home/question.svg";
+import ArrowUp from "@/public/assets/icons/layout/arrow-up.svg";
 
 export default function Home() {
   // useEffect(() => {
   //   import("preline");
   // }, []);
+  // const [showArrow, setShowArrow] = useState(false);
+
+  // useEffect(() => {
+  //   window.addEventListener("scroll", () => {
+  //     if (window.scrollY > 450) {
+  //       setShowArrow(true);
+  //     } else setShowArrow(false);
+  //   });
+
+  //   return () =>
+  //     window.removeEventListener("scroll", () => {
+  //       if (window.scrollY) {
+  //         setShowArrow(true);
+  //       } else setShowArrow(false);
+  //     });
+  // }, [window.scrollY]);
 
   return (
     <>
@@ -862,6 +879,16 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Arrow up */}
+      {/* <Link
+        href="#"
+        className={`fixed p-1.5 duration-300 opacity-50 right-4 bottom-4 gradient hover:opacity-100 bg-primaryDark rounded-[5px] ${
+          showArrow ? "right-2" : ""
+        }`}
+      >
+        <ArrowUp className="w-8 h-8 text-white" />
+      </Link> */}
     </>
   );
 }

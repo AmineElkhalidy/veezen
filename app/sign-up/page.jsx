@@ -2,13 +2,13 @@ import React from "react";
 
 const SignUp = () => {
   return (
-    <div>
-      <section className="grid md:grid-cols-2">
-        <div className="w-full bg-white rounded-lg shadow-md md:mt-0 sm:max-w-md xl:p-0 ">
-          <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
+    <section className="bg-gray-50 min-h-screen md:flex md:items-center md:flex-row-reverse">
+      <div className="flex w-full justify-center items-center px-[2rem]">
+        <div className="w-full bg-white rounded-lg shadow-md md:mt-0 sm:max-w-md md:max-w-2xl lg:max-w-3xl xl:p-0 ">
+          <div className="p-[2rem] space-y-4 md:space-y-6 sm:p-8">
             <a
               href="#"
-              className="flex items-center mb-6 text-2xl font-semibold text-gray-900 "
+              className="flex items-center mb-6 text-[3rem] font-semibold text-gray-900 "
             >
               {/* <img
               className="w-8 h-8 mr-2"
@@ -18,14 +18,18 @@ const SignUp = () => {
               Veezen
             </a>
 
-            <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl ">
-              Create and account
+            <h1
+              className="text-[2.2rem] font-bold leading-tight tracking-tight text-gray-900 md:text-2xl"
+              style={{ marginBottom: "1rem" }}
+            >
+              Create an account
             </h1>
-            <form className="space-y-4 md:space-y-6" action="#">
+
+            <form className="space-y-4 md:space-y-6 " action="#">
               <div>
                 <label
                   for="email"
-                  className="block mb-2 text-sm font-medium text-gray-900 "
+                  className="block mb-2 text-[1.4rem] font-medium text-gray-900 "
                 >
                   Your email
                 </label>
@@ -41,7 +45,7 @@ const SignUp = () => {
               <div>
                 <label
                   for="password"
-                  className="block mb-2 text-sm font-medium text-gray-900 "
+                  className="block mb-2 text-[1.4rem] font-medium text-gray-900 "
                 >
                   Password
                 </label>
@@ -57,7 +61,7 @@ const SignUp = () => {
               <div>
                 <label
                   for="confirm-password"
-                  className="block mb-2 text-sm font-medium text-gray-900 "
+                  className="block mb-2 text-[1.4rem] font-medium text-gray-900 "
                 >
                   Confirm password
                 </label>
@@ -74,12 +78,12 @@ const SignUp = () => {
               <div>
                 <label
                   for="confirm-password"
-                  className="block mb-2 text-sm font-medium text-gray-900 "
+                  className="block mb-2 text-[1.4rem] font-medium text-gray-900 "
                 >
                   Who you are?
                 </label>
                 <select
-                  className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-[1.3rem] rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
                   required=""
                 >
                   <option value="client">Client</option>
@@ -98,7 +102,7 @@ const SignUp = () => {
                     required=""
                   />
                 </div>
-                <div className="ml-3 text-sm">
+                <div className="ml-3 text-[1.4rem]">
                   <label for="terms" className="font-light text-gray-500 ">
                     I accept the{" "}
                     <a
@@ -116,7 +120,7 @@ const SignUp = () => {
               >
                 Create an account
               </button>
-              <p className="text-sm font-light text-gray-500 ">
+              <p className="text-[1.4rem] font-light text-gray-500 ">
                 Already have an account?{" "}
                 <a
                   href="#"
@@ -128,12 +132,12 @@ const SignUp = () => {
             </form>
           </div>
         </div>
+      </div>
 
-        <div className="hidden md:block">
-          <img src="/assets/images/sign-up/signup.svg" alt="Office" />
-        </div>
-      </section>
-    </div>
+      <div className="hidden md:block">
+        <img src="/assets/images/sign-up/signup.svg" alt="Office" />
+      </div>
+    </section>
   );
 };
 
