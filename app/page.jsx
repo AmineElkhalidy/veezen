@@ -630,8 +630,8 @@ export default function Home() {
 
         <div className="max-w-6xl mx-auto px-[2rem] xl:px-0">
           <Accordion>
-            <Accordion.Panel className="outline-none">
-              <Accordion.Title className="text-[1.8rem]">
+            <Accordion.Panel>
+              <Accordion.Title className="text-[2rem] text-[#333]">
                 What is Veezen?
               </Accordion.Title>
               <Accordion.Content>
@@ -646,8 +646,8 @@ export default function Home() {
             </Accordion.Panel>
 
             <Accordion.Panel>
-              <Accordion.Title className="text-[1.8rem]">
-                What is Veezen
+              <Accordion.Title className="text-[2rem] text-[#333]">
+                What is Veezen?
               </Accordion.Title>
               <Accordion.Content>
                 <p className="mb-2 text-gray-600 text-[1.4rem]">
@@ -661,8 +661,8 @@ export default function Home() {
             </Accordion.Panel>
 
             <Accordion.Panel>
-              <Accordion.Title className="text-[1.8rem]">
-                What is Veezen
+              <Accordion.Title className="text-[2rem] text-[#333]">
+                What is Veezen?
               </Accordion.Title>
               <Accordion.Content>
                 <p className="mb-2 text-gray-600 text-[1.4rem]">
