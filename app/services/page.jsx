@@ -168,86 +168,96 @@ const Services = () => {
         <div className="gallery place-items-center">
           <figure className="gallery-item">
             <img
-              src="./assets/images/gallery/gallery-1.webp"
+              src="/assets/images/home/1.jpg"
               alt="Photo of a happy client"
-              srcset=""
             />
           </figure>
           <figure className="gallery-item">
             <img
-              src="./assets/images/gallery/gallery-2.webp"
+              src="/assets/images/home/2.jpg"
               alt="Photo of a happy client"
               srcset=""
+              loading="lazy"
             />
           </figure>
           <figure className="gallery-item">
             <img
-              src="./assets/images/gallery/gallery-3.webp"
+              src="/assets/images/home/3.jpg"
               alt="Photo of a happy client"
               srcset=""
+              loading="lazy"
             />
           </figure>
           <figure className="gallery-item">
             <img
-              src="./assets/images/gallery/gallery-4.webp"
+              src="/assets/images/home/4.jpg"
               alt="Photo of a happy client"
               srcset=""
+              loading="lazy"
             />
           </figure>
           <figure className="gallery-item">
             <img
-              src="./assets/images/gallery/gallery-5.webp"
+              src="/assets/images/home/5.jpg"
               alt="Photo of a happy client"
               srcset=""
+              loading="lazy"
             />
           </figure>
           <figure className="gallery-item">
             <img
-              src="./assets/images/gallery/gallery-6.webp"
+              src="/assets/images/home/6.jpg"
               alt="Photo of a happy client"
               srcset=""
+              loading="lazy"
             />
           </figure>
           <figure className="gallery-item">
             <img
-              src="./assets/images/gallery/gallery-7.webp"
+              src="/assets/images/home/7.jpg"
               alt="Photo of a happy client"
               srcset=""
+              loading="lazy"
             />
           </figure>
           <figure className="gallery-item">
             <img
-              src="./assets/images/gallery/gallery-8.webp"
+              src="/assets/images/home/8.jpg"
               alt="Photo of a happy client"
               srcset=""
+              loading="lazy"
             />
           </figure>
           <figure className="gallery-item">
             <img
-              src="./assets/images/gallery/gallery-9.webp"
+              src="/assets/images/home/9.jpg"
               alt="Photo of a happy client"
               srcset=""
+              loading="lazy"
             />
           </figure>
           <figure className="gallery-item">
             <img
-              src="./assets/images/gallery/gallery-10.webp"
+              src="/assets/images/home/10.jpg"
               alt="Photo of a happy client"
               srcset=""
+              loading="lazy"
             />
           </figure>
           <figure className="gallery-item">
             <img
-              src="./assets/images/gallery/gallery-11.webp"
+              src="/assets/images/home/11.jpg"
               alt="Photo of a happy client"
               srcset=""
+              loading="lazy"
             />
           </figure>
           <figure className="gallery-item">
             <img
-              src="./assets/images/gallery/gallery-12.webp"
+              src="/assets/images/home/12.jpg"
               alt="Photo of a happy client"
               srcset=""
+              loading="lazy"
             />
           </figure>
         </div>
