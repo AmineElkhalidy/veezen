@@ -452,9 +452,8 @@ strong {
   width: 100%;
   padding: 1.2rem;
   font-size: 1.8rem;
-
-  outline: none;
-  border: none;
+  outline: none !important;
+  border: none !important;
   background-color: #eff9f8;
   border-radius: 9px;
   font-family: inherit;

@@ -20,7 +20,7 @@ const Contact = () => {
       </div>
 
       <section className="my-20 max-w-[120rem] mx-auto px-[2rem] xl:px-0 ">
-        <div className="grid md:grid-cols-[2fr_1fr]">
+        <div className="grid md:grid-cols-[2fr_1fr] gap-[12rem] md:gap-8">
           {/* Form */}
           <div>
             <form className="cta-form">
@@ -75,7 +75,7 @@ const Contact = () => {
                   name="message"
                   id="message"
                   placeholder="Your message"
-                  rows={6}
+                  rows={8}
                 ></textarea>
               </div>
 
@@ -94,15 +94,20 @@ const Contact = () => {
           <div className="space-y-10">
             <div className="max-w-lg mx-auto h-[170px] rounded-[1rem] bg-primaryLighter duration-300 group hover:bg-primaryDark">
               <div className="h-full  justify-center flex flex-col items-center gap-8">
-                <Phone className="w-16 h-16 text-primaryDark group-hover:text-white" />
+                <Phone className="w-20 h-20 text-primaryDark group-hover:text-white" />
 
-                <div className="group-hover:text-gray-200 ">
-                  <Link href="#" className="text-[1.4rem] ">
+                <div className="group-hover:text-gray-200 flex flex-col gap-2">
+                  <Link
+                    href="#"
+                    className="text-[1.6rem] duration-300 hover:text-white"
+                  >
                     +212611111111
                   </Link>
-                  <br />
-                  <br />
-                  <Link href="#" className="text-[1.4rem] ">
+
+                  <Link
+                    href="#"
+                    className="text-[1.6rem] duration-300 hover:text-white"
+                  >
                     +212611111111
                   </Link>
                 </div>
@@ -111,10 +116,13 @@ const Contact = () => {
 
             <div className="max-w-lg mx-auto h-[170px] rounded-[1rem] bg-primaryLighter duration-300 group hover:bg-primaryDark">
               <div className="h-full  justify-center flex flex-col items-center gap-8">
-                <Email className="w-16 h-16 text-primaryDark group-hover:text-white" />
+                <Email className="w-20 h-20 text-primaryDark group-hover:text-white" />
 
                 <div className="group-hover:text-gray-200">
-                  <Link href="#" className="text-[1.4rem] ">
+                  <Link
+                    href="#"
+                    className="text-[1.6rem] duration-300 hover:text-white"
+                  >
                     office@veezen.com
                   </Link>
                 </div>
@@ -123,16 +131,21 @@ const Contact = () => {
 
             <div className="max-w-lg mx-auto h-[170px] rounded-[1rem] bg-primaryLighter duration-300 group hover:bg-primaryDark">
               <div className="h-full  justify-center flex flex-col items-center gap-8">
-                <Map className="w-16 h-16 text-primaryDark group-hover:text-white" />
+                <Map className="w-20 h-20 text-primaryDark group-hover:text-white" />
 
-                <div className="text-center px-[1rem] group-hover:text-gray-200">
-                  <Link href="#" className="text-[1.4rem]">
+                <div className="text-center px-[1rem] group-hover:text-gray-200 flex flex-col gap-3">
+                  <Link
+                    href="#"
+                    className="text-[1.5rem] duration-300 hover:text-white"
+                  >
                     Residence Chantimar, Rue N°3, Les princesses II, Maarif
                     extension, Casablanca 20100, Morocco
                   </Link>
-                  <br />
-                  <br />
-                  <Link href="#" className="text-[1.4rem] ">
+
+                  <Link
+                    href="#"
+                    className="text-[1.5rem] duration-300 hover:text-white"
+                  >
                     78, Avenue des champs-Elysées, 75008 Paris, France
                   </Link>
                 </div>

@@ -82,40 +82,56 @@ const About = () => {
           <h2 class="heading-secondary">Why choose us</h2>
         </div>
 
-        <div className="max-w-[120rem] mx-auto px-[2rem] xl:px-0 d-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div className="max-w-[120rem] py-[3rem] mx-auto px-[2rem] xl:px-0 d-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-[9.6rem] ">
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-            <img className="feature-icon" src="/assets/images/home/icon.svg" />
+            <img
+              className="feature-icon"
+              src="/assets/images/home/icon.svg"
+              loading="lazy"
+            />
             <p className="feature-title">Peace Again!</p>
             <p className="feature-text">
-              Our subscriptions cover 365 days per year, even including major
-              holidays.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+              libero!
             </p>
           </div>
 
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-            <img className="feature-icon" src="/assets/images/home/icon.svg" />
+            <img
+              className="feature-icon"
+              src="/assets/images/home/icon.svg"
+              loading="lazy"
+            />
             <p className="feature-title">Peace Again!</p>
             <p className="feature-text">
-              Our cooks only use local, fresh, and organic products to prepare
-              your meals.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+              hic.
             </p>
           </div>
 
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-            <img className="feature-icon" src="/assets/images/home/icon.svg" />
+            <img
+              className="feature-icon"
+              src="/assets/images/home/icon.svg"
+              loading="lazy"
+            />
             <p className="feature-title">Peace Again!</p>
             <p className="feature-text">
-              All our partners only use reusable containers to package all your
-              meals.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+              sed!
             </p>
           </div>
 
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-            <img className="feature-icon" src="/assets/images/home/icon.svg" />
+            <img
+              className="feature-icon"
+              src="/assets/images/home/icon.svg"
+              loading="lazy"
+            />
             <p className="feature-title">Peace Again!</p>
             <p className="feature-text">
-              Going on vacation? Just pause your subscription, and we refund
-              unused days.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+              incidunt.
             </p>
           </div>
         </div>
