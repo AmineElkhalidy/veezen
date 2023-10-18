@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  line-height: 1;
+  line-height: 1.6;
   font-weight: 400;
   color: #555;
 
@@ -29,6 +29,14 @@ img {
 }
 
 /* ---------- REUSABLE CSS CLASSES ---------- */
+.container {
+  @apply max-w-[120rem] py-[3rem] mx-auto px-[2rem] xl:px-0;
+}
+
+.section {
+  @apply pt-[12rem] py-[10rem];
+}
+
 .d-grid {
   display: grid;
   row-gap: 9.6rem;
@@ -85,7 +93,7 @@ img {
   font-family: inherit;
 }
 
-.btn--form {
+/* .btn--form {
   background-color: #45260a;
   color: #fdf2e9;
   padding: 1.2rem;
@@ -96,7 +104,7 @@ img {
 .btn--form:hover {
   background-color: #fff;
   color: #555;
-}
+} */
 
 .btn--primary {
   background-color: #5dc4bb;
@@ -161,20 +169,22 @@ strong {
 /* ---------- HEADER ---------- */
 .header {
   width: 100%;
-  height: 8rem;
-
   position: fixed;
   top: 0;
   left: 0;
-
+  height: 8rem;
   z-index: 100;
-  padding: 0 2.5rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-inline: 2.5rem;
+  }
 }
 
 .nav {
   position: relative;
   height: 100%;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -185,12 +195,12 @@ strong {
   right: 0;
   top: 0;
   width: 100%;
-  height: 100vh;
-  /* background-color: rgba(245, 245, 245, 0.9); */
+  height: 100%;
   background-color: rgba(206, 237, 235, 0.9);
-  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  /* box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03); */
   z-index: 1000;
-
   transition: 0.4s;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
@@ -225,7 +235,6 @@ strong {
 .hero-description {
   font-size: 2rem;
   line-height: 1.6;
-  margin-bottom: 1rem;
   margin-bottom: 4.8rem;
 }
 
@@ -498,7 +507,7 @@ strong {
 
   display: flex;
   flex-direction: column;
-  gap: 2.4rem;
+  gap: 1.5rem;
 }
 
 /* ---------- BREAKPOINTS ---------- */

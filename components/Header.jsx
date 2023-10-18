@@ -38,7 +38,7 @@ const Header = () => {
       <nav className="nav">
         <Link
           href="/"
-          className="capitalize font-semibold text-[22px] text-black duration-300 hover:scale-110"
+          className="capitalize font-semibold text-[22px] lg:text-[24px] text-black duration-300 hover:scale-110"
         >
           {/* <Image src={""} width={12} height={12} className="object-contain" /> */}
           Veezen
@@ -46,7 +46,7 @@ const Header = () => {
 
         {/* Mobile Nav */}
         {open ? (
-          <div className="nav-menu lg:hidden">
+          <div className="nav-menu duration-300 lg:hidden">
             <ul className="nav-list">
               <li>
                 <Link
@@ -106,10 +106,10 @@ const Header = () => {
             </ul>
 
             <button
-              className="inline-block absolute top-8 right-8"
+              className="inline-block absolute top-8 right-10"
               onClick={() => setOpen(false)}
             >
-              <Close className="w-10 h-10 font-semibold cursor-pointer duration-300 hover:text-primaryDark" />
+              <Close className="w-12 h-12 font-semibold cursor-pointer duration-300 hover:text-primaryDark" />
             </button>
           </div>
         ) : (
@@ -122,7 +122,7 @@ const Header = () => {
         )}
 
         {/* Desktop Nav */}
-        <div className="hidden lg:block">
+        <div className="hidden md:block">
           <ul className="nav-list md:flex-row">
             <li>
               <Link

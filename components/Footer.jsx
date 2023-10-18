@@ -73,7 +73,7 @@ const Footer = () => {
 
         <nav className="nav-col">
           <p className="footer-heading mb-4">Contact</p>
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-6">
             <a className="footer-link" href="tel:415-201-6370">
               +212 522 395 674
             </a>

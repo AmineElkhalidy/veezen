@@ -31,12 +31,13 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-primaryLighter py-[8rem] lg:pt-[10rem]">
-        <div className="max-w-[120rem] py-[3rem] mx-auto flex flex-col gap-40 px-[2rem] md:flex-row xl:px-0 lg:gap-20">
+      <section className="bg-primaryLighter section">
+        <div className="container flex flex-col gap-[10rem] md:flex-row lg:gap-[5rem]">
           <div className="text-center md:text-left md:w-full">
-            <h1 className="heading-primary text-[5.2rem] mb-[3.2rem]">
+            <h1 className="heading-primary text-[5.2rem] mb-[3.2rem] leading-tight">
               Mental Health & Well-being in the Workplace
             </h1>
+
             <p className="hero-description">
               Unlocking Peak Performance: Nurturing Mental Health and Well-being
               in the Workplace. Explore the vital link between mental well-being
@@ -44,7 +45,7 @@ export default function Home() {
               modern work culture.
             </p>
 
-            <div className="mt-10 flex flex-col items-center md:items-start lg:flex-row lg:items-center lg:gap-20 gap-3 mb-10">
+            <div className="flex flex-col items-center md:items-start lg:flex-row lg:items-center lg:gap-[5rem] gap-3 mb-10">
               <div className="people-imgs">
                 <Image
                   src="/assets/images/home/customer-1.webp"
@@ -112,13 +113,13 @@ export default function Home() {
       </section>
 
       {/* Clients */}
-      <section className="pt-[2.4rem] pb-[6.4rem] lg:pt-[4.8rem]  ">
-        <div className="max-w-[120rem] py-[3rem] mx-auto px-[2rem] xl:px-0">
+      <section className="pt-[2.4rem] pb-[6.4rem] lg:pt-[4.8rem]">
+        <div className="container">
           <h2 className="text-[24px] text-center font-semibold mb-20 md:mb-28">
             Our Clients
           </h2>
 
-          <div className="flex justify-around gap-12">
+          <div className="flex justify-around gap-6 md:gap-12">
             <img
               src="/assets/images/home/sodexo.png"
               alt="Sedoxo logo"
@@ -150,12 +151,12 @@ export default function Home() {
 
       {/* Services */}
       <section className="py-[9.6rem]">
-        <div className="max-w-[120rem] py-[3rem] mx-auto px-[2rem] xl:px-0">
+        <div className="container">
           <span class="subheading">How it works</span>
           <h2 class="heading-secondary">How can we help you?</h2>
         </div>
 
-        <div class="max-w-[120rem] py-[3rem] md:py-0 mx-auto px-[2rem] xl:px-0 d-grid grid-cols-1 md:grid-cols-2 grid--center-v">
+        <div class="container md:py-0 d-grid grid-cols-1 md:grid-cols-2 grid--center-v">
           <div class="step-text-box">
             <p class="step-number">01</p>
             <h3 class="heading-tertiary">Assessment and Support Evaluation</h3>
@@ -222,8 +223,8 @@ export default function Home() {
       </section>
 
       {/* About */}
-      <section class="bg-primaryLighter py-[8rem]">
-        <div class="max-w-[120rem] py-[3rem] mx-auto flex flex-col gap-40 px-[2rem] md:flex-row xl:px-0 lg:gap-20">
+      <section class="bg-primaryLighter section">
+        <div class="container flex flex-col gap-[10rem]  md:flex-row lg:gap-[5rem]">
           <div class="text-center md:text-left md:w-full">
             <h2 class="heading-secondary" style={{ marginBottom: 0 }}>
               Get to know about us
