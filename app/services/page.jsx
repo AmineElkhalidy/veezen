@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import { Accordion } from "flowbite-react";
 
 const Services = () => {
   return (
@@ -259,184 +260,54 @@ const Services = () => {
           <h2 className="heading-secondary">Frequently Asked Questions</h2>
         </div>
 
-        {/* <div className="max-w-5xl mx-auto px-[2rem] xl:px-0">
-          <div className="hs-accordion-group">
-            <div
-              className="hs-accordion active"
-              id="hs-basic-with-title-and-arrow-stretched-heading-one"
-            >
-              <button
-                className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
-                aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-one"
-              >
-                <div className="flex items-center  gap-2">
-                  <Question className="w-10 h-10" />
-                  <h3 className="">What is Veezen?</h3>
-                </div>
-                <svg
-                  className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
-                </svg>
-                <svg
-                  className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </button>
-              <div
-                id="hs-basic-with-title-and-arrow-stretched-collapse-one"
-                className="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
-                aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one"
-              >
-                <p className="text-gray-800 dark:text-gray-200">
-                  <em>This is the third item's accordion body.</em> It is hidden
-                  by default, until the collapse plugin adds the appropriate
-                  classes that we use to style each element. These classes
-                  control the overall appearance, as well as the showing and
-                  hiding via CSS transitions.
+        <div className="max-w-6xl mx-auto px-[2rem] xl:px-0">
+          <Accordion>
+            <Accordion.Panel className="outline-none">
+              <Accordion.Title className="text-[1.8rem]">
+                What is Veezen?
+              </Accordion.Title>
+              <Accordion.Content>
+                <p className="mb-2 text-gray-600 text-[1.4rem]">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Itaque cupiditate officiis praesentium suscipit
+                    necessitatibus adipisci nisi beatae a, illo possimus.
+                  </p>
                 </p>
-              </div>
-            </div>
+              </Accordion.Content>
+            </Accordion.Panel>
 
-            <div
-              className="hs-accordion"
-              id="hs-basic-with-title-and-arrow-stretched-heading-two"
-            >
-              <button
-                className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
-                aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-two"
-              >
-                <div className="flex items-center  gap-2">
-                  <Question className="w-10 h-10" />
-                  <h3 className="">What is Veezen?</h3>
-                </div>
-                <svg
-                  className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
-                </svg>
-                <svg
-                  className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </button>
-              <div
-                id="hs-basic-with-title-and-arrow-stretched-collapse-two"
-                className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-                aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-two"
-              >
-                <p className="text-gray-800 dark:text-gray-200">
-                  <em>This is the third item's accordion body.</em> It is hidden
-                  by default, until the collapse plugin adds the appropriate
-                  classes that we use to style each element. These classes
-                  control the overall appearance, as well as the showing and
-                  hiding via CSS transitions.
+            <Accordion.Panel>
+              <Accordion.Title className="text-[1.8rem]">
+                What is Veezen
+              </Accordion.Title>
+              <Accordion.Content>
+                <p className="mb-2 text-gray-600 text-[1.4rem]">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Itaque cupiditate officiis praesentium suscipit
+                    necessitatibus adipisci nisi beatae a, illo possimus.
+                  </p>
                 </p>
-              </div>
-            </div>
+              </Accordion.Content>
+            </Accordion.Panel>
 
-            <div
-              className="hs-accordion"
-              id="hs-basic-with-title-and-arrow-stretched-heading-three"
-            >
-              <button
-                className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
-                aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-three"
-              >
-                <div className="flex items-center  gap-2">
-                  <Question className="w-10 h-10" />
-                  <h3 className="">What is Veezen?</h3>
-                </div>
-                <svg
-                  className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
-                </svg>
-                <svg
-                  className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </button>
-
-              <div
-                id="hs-basic-with-title-and-arrow-stretched-collapse-three"
-                className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-                aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-three"
-              >
-                <p className="text-gray-800 dark:text-gray-200">
-                  <em>This is the third item's accordion body.</em> It is hidden
-                  by default, until the collapse plugin adds the appropriate
-                  classes that we use to style each element. These classes
-                  control the overall appearance, as well as the showing and
-                  hiding via CSS transitions.
+            <Accordion.Panel>
+              <Accordion.Title className="text-[1.8rem]">
+                What is Veezen
+              </Accordion.Title>
+              <Accordion.Content>
+                <p className="mb-2 text-gray-600 text-[1.4rem]">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Itaque cupiditate officiis praesentium suscipit
+                    necessitatibus adipisci nisi beatae a, illo possimus.
+                  </p>
                 </p>
-              </div>
-            </div>
-          </div>
-        </div> */}
+              </Accordion.Content>
+            </Accordion.Panel>
+          </Accordion>
+        </div>
       </section>
     </>
   );

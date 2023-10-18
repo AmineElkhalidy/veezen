@@ -3,14 +3,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { Accordion } from "flowbite-react";
 
 import Question from "@/public/assets/images/home/question.svg";
 import ArrowUp from "@/public/assets/icons/layout/arrow-up.svg";
 
 export default function Home() {
-  // useEffect(() => {
-  //   import("preline");
-  // }, []);
   // const [showArrow, setShowArrow] = useState(false);
 
   // useEffect(() => {
@@ -124,26 +122,31 @@ export default function Home() {
               src="/assets/images/home/sodexo.png"
               alt="Sedoxo logo"
               className="logo h-[3rem] lg:h-[5rem] "
+              loading="lazy"
             />
             <img
               src="/assets/images/home/taqa.svg"
               alt="TAQA logo"
               className="logo h-[3rem] lg:h-[5rem] "
+              loading="lazy"
             />
             <img
               src="/assets/images/home/jti.svg"
               alt="JTI logo"
               className="logo h-[3rem] lg:h-[5rem] "
+              loading="lazy"
             />
             <img
               src="/assets/images/home/zalar.png"
               alt="Zalar logo"
               className="logo h-[3rem] lg:h-[5rem] "
+              loading="lazy"
             />
             <img
               src="/assets/images/home/jesa.png"
               alt="JESA logo"
               className="logo h-[3rem] lg:h-[5rem] "
+              loading="lazy"
             />
           </div>
         </div>
@@ -173,6 +176,7 @@ export default function Home() {
               src="/assets/images/home/1.svg"
               alt="Picture"
               class="step-image"
+              loading="lazy"
             />
           </div>
 
@@ -183,6 +187,7 @@ export default function Home() {
               src="/assets/images/home/2.svg"
               alt="Picture"
               class="step-image"
+              loading="lazy"
             />
           </div>
           <div class="step-text-box">
@@ -217,6 +222,7 @@ export default function Home() {
               src="/assets/images/home/3.svg"
               alt="Picture"
               class="step-image"
+              loading="lazy"
             />
           </div>
         </div>
@@ -246,6 +252,7 @@ export default function Home() {
               width={450}
               height={450}
               className="object-contain w-full "
+              loading="lazy"
             />
           </div>
         </div>
@@ -382,38 +389,54 @@ export default function Home() {
 
         <div className="max-w-[120rem] py-[3rem] mx-auto px-[2rem] xl:px-0 d-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-[9.6rem] ">
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-            <img className="feature-icon" src="/assets/images/home/icon.svg" />
+            <img
+              className="feature-icon"
+              src="/assets/images/home/icon.svg"
+              loading="lazy"
+            />
             <p className="feature-title">Peace Again!</p>
             <p className="feature-text">
-              Our subscriptions cover 365 days per year, even including major
-              holidays.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+              libero!
             </p>
           </div>
 
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-            <img className="feature-icon" src="/assets/images/home/icon.svg" />
+            <img
+              className="feature-icon"
+              src="/assets/images/home/icon.svg"
+              loading="lazy"
+            />
             <p className="feature-title">Peace Again!</p>
             <p className="feature-text">
-              Our cooks only use local, fresh, and organic products to prepare
-              your meals.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+              hic.
             </p>
           </div>
 
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-            <img className="feature-icon" src="/assets/images/home/icon.svg" />
+            <img
+              className="feature-icon"
+              src="/assets/images/home/icon.svg"
+              loading="lazy"
+            />
             <p className="feature-title">Peace Again!</p>
             <p className="feature-text">
-              All our partners only use reusable containers to package all your
-              meals.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+              sed!
             </p>
           </div>
 
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-            <img className="feature-icon" src="/assets/images/home/icon.svg" />
+            <img
+              className="feature-icon"
+              src="/assets/images/home/icon.svg"
+              loading="lazy"
+            />
             <p className="feature-title">Peace Again!</p>
             <p className="feature-text">
-              Going on vacation? Just pause your subscription, and we refund
-              unused days.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+              incidunt.
             </p>
           </div>
         </div>
@@ -435,6 +458,7 @@ export default function Home() {
                 src="/assets/images/home/dave.webp"
                 alt="Dave Image"
                 className="testimonial-img"
+                loading="lazy"
               />
 
               <blockquote className="testimonial-text">
@@ -451,6 +475,7 @@ export default function Home() {
                 src="./assets/images/home/ben.webp"
                 alt="Dave Image"
                 className="testimonial-img"
+                loading="lazy"
               />
 
               <blockquote className="testimonial-text">
@@ -467,6 +492,7 @@ export default function Home() {
                 src="./assets/images/home/steve.webp"
                 alt="Dave Image"
                 className="testimonial-img"
+                loading="lazy"
               />
 
               <blockquote className="testimonial-text">
@@ -483,6 +509,7 @@ export default function Home() {
                 src="./assets/images/home/hannah.webp"
                 alt="Dave Image"
                 className="testimonial-img"
+                loading="lazy"
               />
 
               <blockquote className="testimonial-text">
@@ -502,6 +529,7 @@ export default function Home() {
               src="./assets/images/gallery/gallery-1.webp"
               alt="Photo of a happy client"
               srcset=""
+              loading="lazy"
             />
           </figure>
           <figure className="gallery-item">
@@ -509,6 +537,7 @@ export default function Home() {
               src="./assets/images/gallery/gallery-2.webp"
               alt="Photo of a happy client"
               srcset=""
+              loading="lazy"
             />
           </figure>
           <figure className="gallery-item">
@@ -516,6 +545,7 @@ export default function Home() {
               src="./assets/images/gallery/gallery-3.webp"
               alt="Photo of a happy client"
               srcset=""
+              loading="lazy"
             />
           </figure>
           <figure className="gallery-item">
@@ -523,6 +553,7 @@ export default function Home() {
               src="./assets/images/gallery/gallery-4.webp"
               alt="Photo of a happy client"
               srcset=""
+              loading="lazy"
             />
           </figure>
           <figure className="gallery-item">
@@ -530,6 +561,7 @@ export default function Home() {
               src="./assets/images/gallery/gallery-5.webp"
               alt="Photo of a happy client"
               srcset=""
+              loading="lazy"
             />
           </figure>
           <figure className="gallery-item">
@@ -537,6 +569,7 @@ export default function Home() {
               src="./assets/images/gallery/gallery-6.webp"
               alt="Photo of a happy client"
               srcset=""
+              loading="lazy"
             />
           </figure>
           <figure className="gallery-item">
@@ -544,6 +577,7 @@ export default function Home() {
               src="./assets/images/gallery/gallery-7.webp"
               alt="Photo of a happy client"
               srcset=""
+              loading="lazy"
             />
           </figure>
           <figure className="gallery-item">
@@ -551,6 +585,7 @@ export default function Home() {
               src="./assets/images/gallery/gallery-8.webp"
               alt="Photo of a happy client"
               srcset=""
+              loading="lazy"
             />
           </figure>
           <figure className="gallery-item">
@@ -558,6 +593,7 @@ export default function Home() {
               src="./assets/images/gallery/gallery-9.webp"
               alt="Photo of a happy client"
               srcset=""
+              loading="lazy"
             />
           </figure>
           <figure className="gallery-item">
@@ -565,6 +601,7 @@ export default function Home() {
               src="./assets/images/gallery/gallery-10.webp"
               alt="Photo of a happy client"
               srcset=""
+              loading="lazy"
             />
           </figure>
           <figure className="gallery-item">
@@ -572,6 +609,7 @@ export default function Home() {
               src="./assets/images/gallery/gallery-11.webp"
               alt="Photo of a happy client"
               srcset=""
+              loading="lazy"
             />
           </figure>
           <figure className="gallery-item">
@@ -579,6 +617,7 @@ export default function Home() {
               src="./assets/images/gallery/gallery-12.webp"
               alt="Photo of a happy client"
               srcset=""
+              loading="lazy"
             />
           </figure>
         </div>
@@ -591,184 +630,54 @@ export default function Home() {
           <h2 className="heading-secondary">Frequently Asked Questions</h2>
         </div>
 
-        {/* <div className="max-w-5xl mx-auto px-[2rem] xl:px-0">
-          <div className="hs-accordion-group">
-            <div
-              className="hs-accordion active"
-              id="hs-basic-with-title-and-arrow-stretched-heading-one"
-            >
-              <button
-                className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
-                aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-one"
-              >
-                <div className="flex items-center  gap-2">
-                  <Question className="w-10 h-10" />
-                  <h3 className="">What is Veezen?</h3>
-                </div>
-                <svg
-                  className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
-                </svg>
-                <svg
-                  className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </button>
-              <div
-                id="hs-basic-with-title-and-arrow-stretched-collapse-one"
-                className="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
-                aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one"
-              >
-                <p className="text-gray-800 dark:text-gray-200">
-                  <em>This is the third item's accordion body.</em> It is hidden
-                  by default, until the collapse plugin adds the appropriate
-                  classes that we use to style each element. These classes
-                  control the overall appearance, as well as the showing and
-                  hiding via CSS transitions.
+        <div className="max-w-6xl mx-auto px-[2rem] xl:px-0">
+          <Accordion>
+            <Accordion.Panel className="outline-none">
+              <Accordion.Title className="text-[1.8rem]">
+                What is Veezen?
+              </Accordion.Title>
+              <Accordion.Content>
+                <p className="mb-2 text-gray-600 text-[1.4rem]">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Itaque cupiditate officiis praesentium suscipit
+                    necessitatibus adipisci nisi beatae a, illo possimus.
+                  </p>
                 </p>
-              </div>
-            </div>
+              </Accordion.Content>
+            </Accordion.Panel>
 
-            <div
-              className="hs-accordion"
-              id="hs-basic-with-title-and-arrow-stretched-heading-two"
-            >
-              <button
-                className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
-                aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-two"
-              >
-                <div className="flex items-center  gap-2">
-                  <Question className="w-10 h-10" />
-                  <h3 className="">What is Veezen?</h3>
-                </div>
-                <svg
-                  className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
-                </svg>
-                <svg
-                  className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </button>
-              <div
-                id="hs-basic-with-title-and-arrow-stretched-collapse-two"
-                className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-                aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-two"
-              >
-                <p className="text-gray-800 dark:text-gray-200">
-                  <em>This is the third item's accordion body.</em> It is hidden
-                  by default, until the collapse plugin adds the appropriate
-                  classes that we use to style each element. These classes
-                  control the overall appearance, as well as the showing and
-                  hiding via CSS transitions.
+            <Accordion.Panel>
+              <Accordion.Title className="text-[1.8rem]">
+                What is Veezen
+              </Accordion.Title>
+              <Accordion.Content>
+                <p className="mb-2 text-gray-600 text-[1.4rem]">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Itaque cupiditate officiis praesentium suscipit
+                    necessitatibus adipisci nisi beatae a, illo possimus.
+                  </p>
                 </p>
-              </div>
-            </div>
+              </Accordion.Content>
+            </Accordion.Panel>
 
-            <div
-              className="hs-accordion"
-              id="hs-basic-with-title-and-arrow-stretched-heading-three"
-            >
-              <button
-                className="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
-                aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-three"
-              >
-                <div className="flex items-center  gap-2">
-                  <Question className="w-10 h-10" />
-                  <h3 className="">What is Veezen?</h3>
-                </div>
-                <svg
-                  className="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
-                </svg>
-                <svg
-                  className="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </button>
-
-              <div
-                id="hs-basic-with-title-and-arrow-stretched-collapse-three"
-                className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-                aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-three"
-              >
-                <p className="text-gray-800 dark:text-gray-200">
-                  <em>This is the third item's accordion body.</em> It is hidden
-                  by default, until the collapse plugin adds the appropriate
-                  classes that we use to style each element. These classes
-                  control the overall appearance, as well as the showing and
-                  hiding via CSS transitions.
+            <Accordion.Panel>
+              <Accordion.Title className="text-[1.8rem]">
+                What is Veezen
+              </Accordion.Title>
+              <Accordion.Content>
+                <p className="mb-2 text-gray-600 text-[1.4rem]">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Itaque cupiditate officiis praesentium suscipit
+                    necessitatibus adipisci nisi beatae a, illo possimus.
+                  </p>
                 </p>
-              </div>
-            </div>
-          </div>
-        </div> */}
+              </Accordion.Content>
+            </Accordion.Panel>
+          </Accordion>
+        </div>
       </section>
 
       {/* Contact Us */}
