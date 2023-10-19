@@ -4,6 +4,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 import { usePathname } from "next/navigation";
+import ScrollToTopButton from "./ScrollToTopButton";
 
 const Layout = ({ children }) => {
   const pathname = usePathname();
@@ -16,6 +17,7 @@ const Layout = ({ children }) => {
         <Header />
         <main className="overflow-hidden">{children}</main>
         <Footer />
+        <ScrollToTopButton />
       </>
     );
   }
