@@ -1,21 +1,14 @@
-import "../styles/globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-
+import React from "react";
 import Layout from "@/components/Layout";
 
 export const metadata = {
-  title: "Veezen | Mental Health in the Workplace",
+  title: "Veezen | About Us",
   description:
     "Explore a healthier work environment with Veezen, our comprehensive guide to mental health in the workplace. Discover strategies, resources, and expert insights to promote well-being and productivity among employees. Prioritize mental health for a happier, more successful workforce.",
 };
 
-export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <body>
-        <Layout>{children}</Layout>
-      </body>
-    </html>
-  );
-}
+const RootLayout = ({ children }) => {
+  return <Layout>{children}</Layout>;
+};
+
+export default RootLayout;
