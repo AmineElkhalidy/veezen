@@ -1,5 +1,4 @@
 import React from "react";
-import Layout from "@/components/Layout";
 
 export const metadata = {
   title: "Veezen | About Us",
@@ -8,7 +7,7 @@ export const metadata = {
 };
 
 const RootLayout = ({ children }) => {
-  return <Layout>{children}</Layout>;
+  return <>{children}</>;
 };
 
 export default RootLayout;

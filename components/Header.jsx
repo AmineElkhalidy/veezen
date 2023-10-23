@@ -68,15 +68,6 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  href={"/ask-for-quote"}
-                  onClick={() => setOpen(false)}
-                  className="nav-link text-[1.8rem] font-semibold duration-300 hover:text-primaryDark"
-                >
-                  Ask for Quote
-                </Link>
-              </li>
-              <li>
-                <Link
                   href={"/about-us"}
                   onClick={() => setOpen(false)}
                   className="nav-link text-[1.8rem] font-semibold duration-300 hover:text-primaryDark"
@@ -144,16 +135,7 @@ const Header = () => {
                 Services
               </Link>
             </li>
-            <li>
-              <Link
-                href={"/ask-for-quote"}
-                className={`text-[1.8rem] font-semibold duration-300 hover:text-primaryDark ${
-                  pathname === "/ask-for-quote" ? "text-primaryDark" : ""
-                }`}
-              >
-                Ask for Quote
-              </Link>
-            </li>
+
             <li>
               <Link
                 href={"/about-us"}

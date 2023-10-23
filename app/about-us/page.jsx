@@ -82,7 +82,7 @@ const About = () => {
           <h2 class="heading-secondary">Why choose us</h2>
         </div>
 
-        <div className="max-w-[120rem] py-[3rem] mx-auto px-[2rem] xl:px-0 d-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-[9.6rem] ">
+        <div className="max-w-[120rem] py-[3rem] mx-auto px-[2rem] xl:px-0 d-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <img
               className="feature-icon"
@@ -366,7 +366,9 @@ const About = () => {
 
             <form action="" className="cta-form">
               <div>
-                <label htmlFor="first-name">First Name</label>
+                <label className="text-[#eee]" htmlFor="first-name">
+                  First Name
+                </label>
                 <input
                   name="first-name"
                   id="first-name"
@@ -377,7 +379,9 @@ const About = () => {
               </div>
 
               <div>
-                <label htmlFor="last-name">Last Name</label>
+                <label className="text-[#eee]" htmlFor="last-name">
+                  Last Name
+                </label>
                 <input
                   name="last-name"
                   id="last-name"
@@ -388,7 +392,9 @@ const About = () => {
               </div>
 
               <div>
-                <label htmlFor="phone">Phone</label>
+                <label className="text-[#eee]" htmlFor="phone">
+                  Phone
+                </label>
                 <input
                   name="phone"
                   id="phone"
@@ -399,7 +405,9 @@ const About = () => {
               </div>
 
               <div>
-                <label htmlFor="email">Email address</label>
+                <label className="text-[#eee]" htmlFor="email">
+                  Email address
+                </label>
                 <input
                   name="email"
                   id="email"
@@ -410,7 +418,9 @@ const About = () => {
               </div>
 
               <div className="lg:col-span-2">
-                <label htmlFor="message">Message</label>
+                <label className="text-[#eee]" htmlFor="message">
+                  Message
+                </label>
                 <textarea
                   name="message"
                   id="message"
