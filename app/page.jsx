@@ -119,31 +119,31 @@ export default function Home() {
 
           <div className="flex justify-around gap-6 md:gap-12">
             <img
-              src="/assets/images/home/sodexo.png"
+              src="/assets/images/home/techcrunch.webp"
               alt="Sedoxo logo"
               className="logo h-[3rem] lg:h-[5rem] "
               loading="lazy"
             />
             <img
-              src="/assets/images/home/taqa.svg"
+              src="/assets/images/home/business-insider.webp"
               alt="TAQA logo"
               className="logo h-[3rem] lg:h-[5rem] "
               loading="lazy"
             />
             <img
-              src="/assets/images/home/jti.svg"
+              src="/assets/images/home/usa-today.webp"
               alt="JTI logo"
               className="logo h-[3rem] lg:h-[5rem] "
               loading="lazy"
             />
             <img
-              src="/assets/images/home/zalar.png"
+              src="/assets/images/home/forbes.webp"
               alt="Zalar logo"
               className="logo h-[3rem] lg:h-[5rem] "
               loading="lazy"
             />
             <img
-              src="/assets/images/home/jesa.png"
+              src="/assets/images/home/the-new-york-times.webp"
               alt="JESA logo"
               className="logo h-[3rem] lg:h-[5rem] "
               loading="lazy"
