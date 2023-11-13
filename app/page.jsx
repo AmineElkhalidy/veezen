@@ -427,7 +427,7 @@ export default function Home() {
 
       {/* Testimonials */}
       <section className="bg-primaryLight">
-        <div className="max-w-9xl mx-auto">
+        <div className="max-w-[1200px] mx-auto">
           <div className=" lg:grid-cols-[55fr_45fr] lg:items-center d-grid pt-[4.6rem] pb-[6.2rem]">
             <div className="p-[6rem]">
               <div className="mb-40 lg:mb-0">
