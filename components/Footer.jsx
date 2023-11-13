@@ -10,7 +10,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <footer className="footer bg-primaryLighter">
-      <div className="section-container d-grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-[1.5fr_1.5fr_1fr_1fr]">
+      <div className="max-w-[1200px] mx-auto d-grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-[1.5fr_1.5fr_1fr_1fr]">
         <div className="flex flex-col">
           <Link
             className="block text-[2.2rem] font-semibold text-[#333] mb-3"
@@ -104,28 +104,6 @@ const Footer = () => {
             </li>
           </ul>
         </nav>
-
-        {/* <nav className="nav-col">
-          <p className="footer-heading">Resources</p>
-
-          <ul className="footer-nav">
-            <li>
-              <a className="footer-link" href="#">
-                Recipe directory
-              </a>
-            </li>
-            <li>
-              <a className="footer-link" href="#">
-                Help center
-              </a>
-            </li>
-            <li>
-              <a className="footer-link" href="#">
-                Privacy & terms
-              </a>
-            </li>
-          </ul>
-        </nav> */}
       </div>
     </footer>
   );

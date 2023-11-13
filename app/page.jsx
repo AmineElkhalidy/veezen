@@ -9,23 +9,6 @@ import Question from "@/public/assets/images/home/question.svg";
 import ArrowUp from "@/public/assets/icons/layout/arrow-up.svg";
 
 export default function Home() {
-  // const [showArrow, setShowArrow] = useState(false);
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", () => {
-  //     if (window.scrollY > 450) {
-  //       setShowArrow(true);
-  //     } else setShowArrow(false);
-  //   });
-
-  //   return () =>
-  //     window.removeEventListener("scroll", () => {
-  //       if (window.scrollY) {
-  //         setShowArrow(true);
-  //       } else setShowArrow(false);
-  //     });
-  // }, [window.scrollY]);
-
   return (
     <>
       {/* Hero */}
@@ -443,181 +426,185 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="bg-primaryLight lg:grid-cols-[55fr_45fr] lg:items-center d-grid pt-[4.6rem] pb-[6.2rem] ">
-        <div className="p-[6rem]">
-          <div className="mb-40 lg:mb-0">
-            <span className="subheading">Testimonials</span>
-            <h2 className="heading-secondary">
-              Healing Words Testimonials from Veezen Clients
-            </h2>
+      <section className="bg-primaryLight">
+        <div className="max-w-9xl mx-auto">
+          <div className=" lg:grid-cols-[55fr_45fr] lg:items-center d-grid pt-[4.6rem] pb-[6.2rem]">
+            <div className="p-[6rem]">
+              <div className="mb-40 lg:mb-0">
+                <span className="subheading">Testimonials</span>
+                <h2 className="heading-secondary">
+                  Healing Words Testimonials from Veezen Clients
+                </h2>
+              </div>
+
+              <div className="testimonials">
+                <figure className="testimonial">
+                  <img
+                    src="/assets/images/home/dave.webp"
+                    alt="Dave Image"
+                    className="testimonial-img"
+                    loading="lazy"
+                  />
+
+                  <blockquote className="testimonial-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quibusdam harum Quibusdam harum Quibusdam harum
+                  </blockquote>
+
+                  <p className="testimonial-name">&mdash; Dave Bryson</p>
+                  <p className="text-[1.4rem] mt-2">Director Of HR</p>
+                </figure>
+
+                <figure className="testimonial">
+                  <img
+                    src="./assets/images/home/ben.webp"
+                    alt="Dave Image"
+                    className="testimonial-img"
+                    loading="lazy"
+                  />
+
+                  <blockquote className="testimonial-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quibusdam harum Quibusdam harum Quibusdam harum
+                  </blockquote>
+
+                  <p className="testimonial-name">&mdash; Ben Hadley</p>
+                  <p className="text-[1.4rem] mt-2">Director Of HR</p>
+                </figure>
+
+                <figure className="testimonial">
+                  <img
+                    src="./assets/images/home/steve.webp"
+                    alt="Dave Image"
+                    className="testimonial-img"
+                    loading="lazy"
+                  />
+
+                  <blockquote className="testimonial-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quibusdam harum Quibusdam harum Quibusdam harum
+                  </blockquote>
+
+                  <p className="testimonial-name">&mdash; Steve Miller</p>
+                  <p className="text-[1.4rem] mt-2">Director Of HR</p>
+                </figure>
+
+                <figure className="testimonial">
+                  <img
+                    src="./assets/images/home/hannah.webp"
+                    alt="Dave Image"
+                    className="testimonial-img"
+                    loading="lazy"
+                  />
+
+                  <blockquote className="testimonial-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quibusdam harum Quibusdam harum Quibusdam harum
+                  </blockquote>
+
+                  <p className="testimonial-name">&mdash; Hannah Smith</p>
+                  <p className="text-[1.4rem] mt-2">Director Of HR</p>
+                </figure>
+              </div>
+            </div>
+
+            <div className="gallery place-items-center">
+              <figure className="gallery-item">
+                <img
+                  src="/assets/images/home/1.jpg"
+                  alt="Photo of a happy client"
+                />
+              </figure>
+              <figure className="gallery-item">
+                <img
+                  src="/assets/images/home/2.jpg"
+                  alt="Photo of a happy client"
+                  srcset=""
+                  loading="lazy"
+                />
+              </figure>
+              <figure className="gallery-item">
+                <img
+                  src="/assets/images/home/3.jpg"
+                  alt="Photo of a happy client"
+                  srcset=""
+                  loading="lazy"
+                />
+              </figure>
+              <figure className="gallery-item">
+                <img
+                  src="/assets/images/home/4.jpg"
+                  alt="Photo of a happy client"
+                  srcset=""
+                  loading="lazy"
+                />
+              </figure>
+              <figure className="gallery-item">
+                <img
+                  src="/assets/images/home/5.jpg"
+                  alt="Photo of a happy client"
+                  srcset=""
+                  loading="lazy"
+                />
+              </figure>
+              <figure className="gallery-item">
+                <img
+                  src="/assets/images/home/6.jpg"
+                  alt="Photo of a happy client"
+                  srcset=""
+                  loading="lazy"
+                />
+              </figure>
+              <figure className="gallery-item">
+                <img
+                  src="/assets/images/home/7.jpg"
+                  alt="Photo of a happy client"
+                  srcset=""
+                  loading="lazy"
+                />
+              </figure>
+              <figure className="gallery-item">
+                <img
+                  src="/assets/images/home/8.jpg"
+                  alt="Photo of a happy client"
+                  srcset=""
+                  loading="lazy"
+                />
+              </figure>
+              <figure className="gallery-item">
+                <img
+                  src="/assets/images/home/9.jpg"
+                  alt="Photo of a happy client"
+                  srcset=""
+                  loading="lazy"
+                />
+              </figure>
+              <figure className="gallery-item">
+                <img
+                  src="/assets/images/home/10.jpg"
+                  alt="Photo of a happy client"
+                  srcset=""
+                  loading="lazy"
+                />
+              </figure>
+              <figure className="gallery-item">
+                <img
+                  src="/assets/images/home/11.jpg"
+                  alt="Photo of a happy client"
+                  srcset=""
+                  loading="lazy"
+                />
+              </figure>
+              <figure className="gallery-item">
+                <img
+                  src="/assets/images/home/12.jpg"
+                  alt="Photo of a happy client"
+                  srcset=""
+                  loading="lazy"
+                />
+              </figure>
+            </div>
           </div>
-
-          <div className="testimonials">
-            <figure className="testimonial">
-              <img
-                src="/assets/images/home/dave.webp"
-                alt="Dave Image"
-                className="testimonial-img"
-                loading="lazy"
-              />
-
-              <blockquote className="testimonial-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Quibusdam harum Quibusdam harum Quibusdam harum
-              </blockquote>
-
-              <p className="testimonial-name">&mdash; Dave Bryson</p>
-              <p className="text-[1.4rem] mt-2">Director Of HR</p>
-            </figure>
-
-            <figure className="testimonial">
-              <img
-                src="./assets/images/home/ben.webp"
-                alt="Dave Image"
-                className="testimonial-img"
-                loading="lazy"
-              />
-
-              <blockquote className="testimonial-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Quibusdam harum Quibusdam harum Quibusdam harum
-              </blockquote>
-
-              <p className="testimonial-name">&mdash; Ben Hadley</p>
-              <p className="text-[1.4rem] mt-2">Director Of HR</p>
-            </figure>
-
-            <figure className="testimonial">
-              <img
-                src="./assets/images/home/steve.webp"
-                alt="Dave Image"
-                className="testimonial-img"
-                loading="lazy"
-              />
-
-              <blockquote className="testimonial-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Quibusdam harum Quibusdam harum Quibusdam harum
-              </blockquote>
-
-              <p className="testimonial-name">&mdash; Steve Miller</p>
-              <p className="text-[1.4rem] mt-2">Director Of HR</p>
-            </figure>
-
-            <figure className="testimonial">
-              <img
-                src="./assets/images/home/hannah.webp"
-                alt="Dave Image"
-                className="testimonial-img"
-                loading="lazy"
-              />
-
-              <blockquote className="testimonial-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Quibusdam harum Quibusdam harum Quibusdam harum
-              </blockquote>
-
-              <p className="testimonial-name">&mdash; Hannah Smith</p>
-              <p className="text-[1.4rem] mt-2">Director Of HR</p>
-            </figure>
-          </div>
-        </div>
-
-        <div className="gallery place-items-center">
-          <figure className="gallery-item">
-            <img
-              src="/assets/images/home/1.jpg"
-              alt="Photo of a happy client"
-            />
-          </figure>
-          <figure className="gallery-item">
-            <img
-              src="/assets/images/home/2.jpg"
-              alt="Photo of a happy client"
-              srcset=""
-              loading="lazy"
-            />
-          </figure>
-          <figure className="gallery-item">
-            <img
-              src="/assets/images/home/3.jpg"
-              alt="Photo of a happy client"
-              srcset=""
-              loading="lazy"
-            />
-          </figure>
-          <figure className="gallery-item">
-            <img
-              src="/assets/images/home/4.jpg"
-              alt="Photo of a happy client"
-              srcset=""
-              loading="lazy"
-            />
-          </figure>
-          <figure className="gallery-item">
-            <img
-              src="/assets/images/home/5.jpg"
-              alt="Photo of a happy client"
-              srcset=""
-              loading="lazy"
-            />
-          </figure>
-          <figure className="gallery-item">
-            <img
-              src="/assets/images/home/6.jpg"
-              alt="Photo of a happy client"
-              srcset=""
-              loading="lazy"
-            />
-          </figure>
-          <figure className="gallery-item">
-            <img
-              src="/assets/images/home/7.jpg"
-              alt="Photo of a happy client"
-              srcset=""
-              loading="lazy"
-            />
-          </figure>
-          <figure className="gallery-item">
-            <img
-              src="/assets/images/home/8.jpg"
-              alt="Photo of a happy client"
-              srcset=""
-              loading="lazy"
-            />
-          </figure>
-          <figure className="gallery-item">
-            <img
-              src="/assets/images/home/9.jpg"
-              alt="Photo of a happy client"
-              srcset=""
-              loading="lazy"
-            />
-          </figure>
-          <figure className="gallery-item">
-            <img
-              src="/assets/images/home/10.jpg"
-              alt="Photo of a happy client"
-              srcset=""
-              loading="lazy"
-            />
-          </figure>
-          <figure className="gallery-item">
-            <img
-              src="/assets/images/home/11.jpg"
-              alt="Photo of a happy client"
-              srcset=""
-              loading="lazy"
-            />
-          </figure>
-          <figure className="gallery-item">
-            <img
-              src="/assets/images/home/12.jpg"
-              alt="Photo of a happy client"
-              srcset=""
-              loading="lazy"
-            />
-          </figure>
         </div>
       </section>
 
@@ -787,16 +774,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Arrow up */}
-      {/* <Link
-        href="#"
-        className={`fixed p-1.5 duration-300 opacity-50 right-4 bottom-4 gradient hover:opacity-100 bg-primaryDark rounded-[5px] ${
-          showArrow ? "right-2" : ""
-        }`}
-      >
-        <ArrowUp className="w-8 h-8 text-white" />
-      </Link> */}
     </>
   );
 }
