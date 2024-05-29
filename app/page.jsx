@@ -93,47 +93,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Clients */}
-      <section className="pt-[2.4rem] pb-[6.4rem] lg:pt-[4.8rem]">
-        <div className="container">
-          <h2 className="text-[24px] text-center font-semibold mb-20 md:mb-28">
-            Our Clients
-          </h2>
-
-          <div className="flex justify-around gap-6 md:gap-12">
-            <img
-              src="/assets/images/home/techcrunch.webp"
-              alt="Sedoxo logo"
-              className="logo h-[3rem] lg:h-[5rem] "
-              loading="lazy"
-            />
-            <img
-              src="/assets/images/home/business-insider.webp"
-              alt="TAQA logo"
-              className="logo h-[3rem] lg:h-[5rem] "
-              loading="lazy"
-            />
-            <img
-              src="/assets/images/home/usa-today.webp"
-              alt="JTI logo"
-              className="logo h-[3rem] lg:h-[5rem] "
-              loading="lazy"
-            />
-            <img
-              src="/assets/images/home/forbes.webp"
-              alt="Zalar logo"
-              className="logo h-[3rem] lg:h-[5rem] "
-              loading="lazy"
-            />
-            <img
-              src="/assets/images/home/the-new-york-times.webp"
-              alt="JESA logo"
-              className="logo h-[3rem] lg:h-[5rem] "
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </section>
+    
 
       {/* Services */}
       <section className="py-[9.6rem]">
