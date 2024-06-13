@@ -1,12 +1,6 @@
 "use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import { Accordion } from "flowbite-react";
-
-import Question from "@/public/assets/images/home/question.svg";
-import ArrowUp from "@/public/assets/icons/layout/arrow-up.svg";
 
 export default function Home() {
   return (
@@ -72,21 +66,22 @@ export default function Home() {
                 />
               </div>
 
-              <p class="text-[1.4rem] font-semibold">
+              <p className="text-[1.4rem] font-semibold">
                 <span>100+</span> person we have helped!
               </p>
             </div>
 
-            <Link href="#meals" class="btn btn--primary">
+            <Link href="#meals" className="btn btn--primary">
               Get Started
             </Link>
           </div>
 
-          <div class="self-center md:w-full">
+          <div className="self-center md:w-full">
             <Image
               src="/assets/images/home/hero.svg"
               width={450}
               height={450}
+              alt="Veezen startegy"
               className="w-full object-contain"
             />
           </div>
@@ -96,57 +91,61 @@ export default function Home() {
       {/* Clients */}
       <section className="pt-[2.4rem] pb-[6.4rem] lg:pt-[4.8rem]">
         <div className="container">
-          <h2 className="text-[24px] text-center font-semibold mb-20 md:mb-28">
+          <h2 className="text-[2.4rem] text-center font-semibold mb-20">
             Our Clients
           </h2>
 
-          <div className="flex justify-around gap-6 md:gap-12">
-            <img
-              src="/assets/images/home/techcrunch.webp"
-              alt="Sedoxo logo"
-              className="logo h-[3rem] lg:h-[5rem] "
-              loading="lazy"
-            />
-            <img
-              src="/assets/images/home/business-insider.webp"
-              alt="TAQA logo"
-              className="logo h-[3rem] lg:h-[5rem] "
-              loading="lazy"
-            />
-            <img
-              src="/assets/images/home/usa-today.webp"
-              alt="JTI logo"
-              className="logo h-[3rem] lg:h-[5rem] "
-              loading="lazy"
-            />
-            <img
-              src="/assets/images/home/forbes.webp"
-              alt="Zalar logo"
-              className="logo h-[3rem] lg:h-[5rem] "
-              loading="lazy"
-            />
-            <img
-              src="/assets/images/home/the-new-york-times.webp"
-              alt="JESA logo"
-              className="logo h-[3rem] lg:h-[5rem] "
-              loading="lazy"
-            />
+          <div className="w-full flex items-center justify-center">
+            <div className="flex gap-12">
+              <img
+                src="/assets/images/home/techcrunch.webp"
+                alt="Sedoxo logo"
+                className="logo h-[3rem]"
+                loading="lazy"
+              />
+              <img
+                src="/assets/images/home/business-insider.webp"
+                alt="TAQA logo"
+                className="logo h-[3rem]"
+                loading="lazy"
+              />
+              <img
+                src="/assets/images/home/usa-today.webp"
+                alt="JTI logo"
+                className="logo h-[3rem]"
+                loading="lazy"
+              />
+              <img
+                src="/assets/images/home/forbes.webp"
+                alt="Zalar logo"
+                className="logo h-[3rem]"
+                loading="lazy"
+              />
+              <img
+                src="/assets/images/home/the-new-york-times.webp"
+                alt="JESA logo"
+                className="logo h-[3rem]"
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       {/* Services */}
-      <section className="py-[9.6rem]">
+      <section className="py-[9rem] ]">
         <div className="container">
-          <span class="subheading">How it works</span>
-          <h2 class="heading-secondary">How can we help you?</h2>
+          <span className="subheading">How it works</span>
+          <h2 className="heading-secondary">How can we help you?</h2>
         </div>
 
-        <div class="container md:py-0 d-grid grid-cols-1 md:grid-cols-2 grid--center-v">
-          <div class="step-text-box">
-            <p class="step-number">01</p>
-            <h3 class="heading-tertiary">Assessment and Support Evaluation</h3>
-            <p class="step-description">
+        <div className="container md:py-0 d-grid grid-cols-1 md:grid-cols-2 grid--center-v">
+          <div className="step-text-box">
+            <p className="step-number">01</p>
+            <h3 className="heading-tertiary">
+              Assessment and Support Evaluation
+            </h3>
+            <p className="step-description">
               : In the initial stage, we conduct a comprehensive assessment of
               the individual's mental health and well-being needs. Our expert
               team evaluates the specific challenges and stressors they may face
@@ -154,29 +153,29 @@ export default function Home() {
               support strategies.
             </p>
           </div>
-          <div class="step-image-box">
+          <div className="step-image-box">
             <img
               src="/assets/images/home/1.svg"
               alt="Picture"
-              class="step-image"
+              className="step-image"
               loading="lazy"
             />
           </div>
 
           <div className="mb-20 md:hidden"></div>
 
-          <div class="step-image-box">
+          <div className="step-image-box">
             <img
               src="/assets/images/home/2.svg"
               alt="Picture"
-              class="step-image"
+              className="step-image"
               loading="lazy"
             />
           </div>
-          <div class="step-text-box">
-            <p class="step-number">02</p>
-            <h3 class="heading-tertiary">Personalized Well-being Plans</h3>
-            <p class="step-description">
+          <div className="step-text-box">
+            <p className="step-number">02</p>
+            <h3 className="heading-tertiary">Personalized Well-being Plans</h3>
+            <p className="step-description">
               : Based on the assessment results, we create personalized
               well-being plans. These plans include a range of interventions,
               such as stress management techniques, resilience-building
@@ -188,10 +187,10 @@ export default function Home() {
 
           <div className="mb-20 md:hidden"></div>
 
-          <div class="step-text-box">
-            <p class="step-number">03</p>
-            <h3 class="heading-tertiary">Ongoing Support and Resources</h3>
-            <p class="step-description">
+          <div className="step-text-box">
+            <p className="step-number">03</p>
+            <h3 className="heading-tertiary">Ongoing Support and Resources</h3>
+            <p className="step-description">
               : We understand that well-being is an ongoing journey. Our
               services offer continuous support, including access to mental
               health professionals, workshops, and educational resources. We aim
@@ -200,11 +199,11 @@ export default function Home() {
               workplace.
             </p>
           </div>
-          <div class="step-image-box">
+          <div className="step-image-box">
             <img
               src="/assets/images/home/3.svg"
               alt="Picture"
-              class="step-image"
+              className="step-image"
               loading="lazy"
             />
           </div>
@@ -212,28 +211,29 @@ export default function Home() {
       </section>
 
       {/* About */}
-      <section class="bg-primaryLighter section">
-        <div class="container flex flex-col gap-[10rem]  md:flex-row lg:gap-[5rem]">
-          <div class="text-center md:text-left md:w-full">
-            <h2 class="heading-secondary" style={{ marginBottom: 0 }}>
+      <section className="bg-primaryLighter section">
+        <div className="container flex flex-col gap-[10rem]  md:flex-row lg:gap-[5rem]">
+          <div className="text-center md:text-left md:w-full">
+            <h2 className="heading-secondary" style={{ marginBottom: 0 }}>
               Get to know about us
             </h2>
-            <p class="hero-description mt-10">
+            <p className="hero-description mt-10">
               Veezen: Shaping Workplace Well-being. We specialize in
               transforming workplaces into nurturing, mental-health-focused
               environments, fostering employee happiness and business success.
             </p>
 
-            <Link href="/about-us" class="btn btn--primary">
+            <Link href="/about-us" className="btn btn--primary">
               Learn more
             </Link>
           </div>
 
-          <div class="text-center self-center md:w-full">
+          <div className="text-center self-center md:w-full">
             <Image
               src="/assets/images/home/hero.svg"
               width={450}
               height={450}
+              alt="Veezen vision"
               className="object-contain w-full "
               loading="lazy"
             />
@@ -313,61 +313,6 @@ export default function Home() {
               </a>
             </div>
           </div>
-
-          {/* <div className="pricing-plan pricing-plan--complete">
-            <header className="plan-header">
-              <p className="plan-name">Complete</p>
-              <p className="plan-price">
-                <span>$</span>649
-              </p>
-              <p className="plan-text">Every Week</p>
-              <p className="plan-text">1 session</p>
-            </header>
-
-            <ul className="list">
-              <li className="list-item">
-                <ion-icon
-                  className="list-icon"
-                  name="checkmark-outline"
-                ></ion-icon>
-                <span>
-                  <strong>2 meals</strong> meals per day
-                </span>
-              </li>
-
-              <li className="list-item">
-                <ion-icon
-                  className="list-icon"
-                  name="checkmark-outline"
-                ></ion-icon>
-                <span>
-                  Order <strong>24/7</strong>
-                </span>
-              </li>
-
-              <li className="list-item">
-                <ion-icon
-                  className="list-icon"
-                  name="checkmark-outline"
-                ></ion-icon>
-                <span>Delivery is free</span>
-              </li>
-
-              <li className="list-item">
-                <ion-icon
-                  className="list-icon"
-                  name="checkmark-outline"
-                ></ion-icon>
-                <span>Get access to latest recipes</span>
-              </li>
-            </ul>
-
-            <div className="plan-sign-up">
-              <a href="#" className="btn btn--primary">
-                Start eating well
-              </a>
-            </div>
-          </div> */}
         </div>
 
         <div className="max-w-[120rem] py-[3rem] mx-auto px-[2rem] xl:px-0 d-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-[9.6rem] ">
@@ -519,7 +464,7 @@ export default function Home() {
                 <img
                   src="/assets/images/home/2.jpg"
                   alt="Photo of a happy client"
-                  srcset=""
+                  srcSet=""
                   loading="lazy"
                 />
               </figure>
@@ -527,7 +472,7 @@ export default function Home() {
                 <img
                   src="/assets/images/home/3.jpg"
                   alt="Photo of a happy client"
-                  srcset=""
+                  srcSet=""
                   loading="lazy"
                 />
               </figure>
@@ -535,7 +480,7 @@ export default function Home() {
                 <img
                   src="/assets/images/home/4.jpg"
                   alt="Photo of a happy client"
-                  srcset=""
+                  srcSet=""
                   loading="lazy"
                 />
               </figure>
@@ -543,7 +488,7 @@ export default function Home() {
                 <img
                   src="/assets/images/home/5.jpg"
                   alt="Photo of a happy client"
-                  srcset=""
+                  srcSet=""
                   loading="lazy"
                 />
               </figure>
@@ -551,7 +496,7 @@ export default function Home() {
                 <img
                   src="/assets/images/home/6.jpg"
                   alt="Photo of a happy client"
-                  srcset=""
+                  srcSet=""
                   loading="lazy"
                 />
               </figure>
@@ -559,7 +504,7 @@ export default function Home() {
                 <img
                   src="/assets/images/home/7.jpg"
                   alt="Photo of a happy client"
-                  srcset=""
+                  srcSet=""
                   loading="lazy"
                 />
               </figure>
@@ -567,7 +512,7 @@ export default function Home() {
                 <img
                   src="/assets/images/home/8.jpg"
                   alt="Photo of a happy client"
-                  srcset=""
+                  srcSet=""
                   loading="lazy"
                 />
               </figure>
@@ -575,7 +520,7 @@ export default function Home() {
                 <img
                   src="/assets/images/home/9.jpg"
                   alt="Photo of a happy client"
-                  srcset=""
+                  srcSet=""
                   loading="lazy"
                 />
               </figure>
@@ -583,7 +528,7 @@ export default function Home() {
                 <img
                   src="/assets/images/home/10.jpg"
                   alt="Photo of a happy client"
-                  srcset=""
+                  srcSet=""
                   loading="lazy"
                 />
               </figure>
@@ -591,7 +536,7 @@ export default function Home() {
                 <img
                   src="/assets/images/home/11.jpg"
                   alt="Photo of a happy client"
-                  srcset=""
+                  srcSet=""
                   loading="lazy"
                 />
               </figure>
@@ -599,7 +544,7 @@ export default function Home() {
                 <img
                   src="/assets/images/home/12.jpg"
                   alt="Photo of a happy client"
-                  srcset=""
+                  srcSet=""
                   loading="lazy"
                 />
               </figure>
@@ -609,167 +554,181 @@ export default function Home() {
       </section>
 
       {/* Faq's */}
-      <section className="pt-[2.4rem] pb-[6.4rem] lg:pt-[4.8rem] lg:pb-[9.6rem]">
+      {/* <section className="pt-[2.4rem] pb-[6.4rem] lg:pt-[4.8rem] lg:pb-[9.6rem]">
         <div className="text-center">
           <span className="subheading">FAQ</span>
           <h2 className="heading-secondary">Frequently Asked Questions</h2>
         </div>
 
-        <div className="max-w-6xl mx-auto px-[2rem] xl:px-0">
-          <Accordion>
-            <Accordion.Panel>
-              <Accordion.Title className="text-[2rem] text-[#333]">
-                What is Veezen?
-              </Accordion.Title>
-              <Accordion.Content>
-                <p className="mb-2 text-gray-600 text-[1.4rem]">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Itaque cupiditate officiis praesentium suscipit
-                    necessitatibus adipisci nisi beatae a, illo possimus.
-                  </p>
-                </p>
-              </Accordion.Content>
-            </Accordion.Panel>
+        <div className="bg-white">
+          <div className="mx-auto max-w-7xl px-6lg:px-8">
+            <div className="mx-auto max-w-4xl divide-y divide-gray-900/10">
+              <dl className="space-y-6 divide-y divide-gray-900/10">
+                <div className="pt-6">
+                  <dt>
+                    <button
+                      type="button"
+                      className="flex w-full items-start justify-between text-left text-gray-900"
+                      aria-controls="faq-0"
+                      aria-expanded="false"
+                    >
+                      <span className="text-[1.5rem] font-semibold leading-7">
+                        What is Veezen?
+                      </span>
+                      <span className="ml-6 flex h-7 items-center">
+                        <svg
+                          className="h-8 w-8"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth="1.5"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M12 6v12m6-6H6"
+                          />
+                        </svg>
 
-            <Accordion.Panel>
-              <Accordion.Title className="text-[2rem] text-[#333]">
-                What is Veezen?
-              </Accordion.Title>
-              <Accordion.Content>
-                <p className="mb-2 text-gray-600 text-[1.4rem]">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Itaque cupiditate officiis praesentium suscipit
-                    necessitatibus adipisci nisi beatae a, illo possimus.
-                  </p>
-                </p>
-              </Accordion.Content>
-            </Accordion.Panel>
-
-            <Accordion.Panel>
-              <Accordion.Title className="text-[2rem] text-[#333]">
-                What is Veezen?
-              </Accordion.Title>
-              <Accordion.Content>
-                <p className="mb-2 text-gray-600 text-[1.4rem]">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Itaque cupiditate officiis praesentium suscipit
-                    necessitatibus adipisci nisi beatae a, illo possimus.
-                  </p>
-                </p>
-              </Accordion.Content>
-            </Accordion.Panel>
-          </Accordion>
+                        <svg
+                          className="hidden h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth="1.5"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M18 12H6"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </dt>
+                  <dd className="mt-2 pr-12" id="faq-0">
+                    <p className="text-[1.2rem] leading-7 text-gray-600">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Adipisci cupiditate, dignissimos in asperiores qui dolorem
+                      numquam perferendis at, aliquid facilis veritatis quaerat
+                    </p>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Us */}
-      <section className=" bg-[#275A55] ">
-        <div className="grid md:grid-cols-2">
-          {/* Form */}
-          <div className="px-[2rem] w-full pt-[9.6rem] pb-[6rem] ">
-            <div className="mb-[10rem] md:mb-[8rem] ">
-              <h2
-                className="heading-secondary"
-                style={{ color: "white", marginBottom: 0 }}
-              >
-                Get in Touch With Us
-              </h2>
-              <p className="text-[2rem] mt-[2rem] text-[#eee]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Blanditiis a sed, consectetur mollitia quisquam itaque. Quam
-                vitae fugiat aut doloremque aperiam sapiente incidunt eos
-                delectus.
-              </p>
+      <section className=" bg-[#275A55]">
+        <div className="container">
+          <div className="grid md:grid-cols-2">
+            {/* Form */}
+            <div className="px-[2rem] w-full pt-[9.6rem] pb-[6rem] ">
+              <div className="mb-[10rem] md:mb-[8rem] ">
+                <h2
+                  className="heading-secondary"
+                  style={{ color: "white", marginBottom: 0 }}
+                >
+                  Get in Touch With Us
+                </h2>
+                <p className="text-[2rem] mt-[2rem] text-[#eee]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Blanditiis a sed, consectetur mollitia quisquam itaque. Quam
+                  vitae fugiat aut doloremque aperiam sapiente incidunt eos
+                  delectus.
+                </p>
+              </div>
+
+              <form action="" className="cta-form">
+                <div>
+                  <label className="text-[#eee] " htmlFor="first-name">
+                    First Name
+                  </label>
+                  <input
+                    name="first-name"
+                    id="first-name"
+                    type="text"
+                    placeholder="Your name"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="text-[#eee]" htmlFor="last-name">
+                    Last Name
+                  </label>
+                  <input
+                    name="last-name"
+                    id="last-name"
+                    type="text"
+                    placeholder="Last Name"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="text-[#eee]" htmlFor="phone">
+                    Phone
+                  </label>
+                  <input
+                    name="phone"
+                    id="phone"
+                    type="text"
+                    placeholder="Phone Number"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="text-[#eee]" htmlFor="email">
+                    Email address
+                  </label>
+                  <input
+                    name="email"
+                    id="email"
+                    type="email"
+                    placeholder="me@example.com"
+                    required
+                  />
+                </div>
+
+                <div className="lg:col-span-2">
+                  <label className="text-[#eee]" htmlFor="message">
+                    Message
+                  </label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Your message"
+                    rows={6}
+                  ></textarea>
+                </div>
+
+                <div>
+                  <button
+                    type="submit"
+                    className="px-[4.6rem] py-[1.8rem] bg-white rounded-[1rem] text-[1.6rem] text-primaryDark font-semibold mt-8 duration-300 hover:bg-primaryDark hover:text-white border border-primaryDark hover:border-white"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
             </div>
 
-            <form action="" className="cta-form">
-              <div>
-                <label className="text-[#eee] " htmlFor="first-name">
-                  First Name
-                </label>
-                <input
-                  name="first-name"
-                  id="first-name"
-                  type="text"
-                  placeholder="Your name"
-                  required
-                />
+            {/* Image */}
+            <div className="contact-img--container">
+              <div className="w-full h-full flex relative justify-center items-center px-[2rem] py-[9.6rem] ">
+                <p className="p-[2rem] text-[3rem] text-white border border-white leading-snug rounded-[1rem] md:p-[3rem] ">
+                  "Prioritizing mental health and well-being in the workplace is
+                  not just a compassionate act; it's an essential investment in
+                  the overall success, productivity, and happiness of your team.
+                  A mentally healthy workforce is a thriving workforce."
+                </p>
               </div>
-
-              <div>
-                <label className="text-[#eee]" htmlFor="last-name">
-                  Last Name
-                </label>
-                <input
-                  name="last-name"
-                  id="last-name"
-                  type="text"
-                  placeholder="Last Name"
-                  required
-                />
-              </div>
-
-              <div>
-                <label className="text-[#eee]" htmlFor="phone">
-                  Phone
-                </label>
-                <input
-                  name="phone"
-                  id="phone"
-                  type="text"
-                  placeholder="Phone Number"
-                  required
-                />
-              </div>
-
-              <div>
-                <label className="text-[#eee]" htmlFor="email">
-                  Email address
-                </label>
-                <input
-                  name="email"
-                  id="email"
-                  type="email"
-                  placeholder="me@example.com"
-                  required
-                />
-              </div>
-
-              <div className="lg:col-span-2">
-                <label className="text-[#eee]" htmlFor="message">
-                  Message
-                </label>
-                <textarea
-                  name="message"
-                  id="message"
-                  placeholder="Your message"
-                  rows={6}
-                ></textarea>
-              </div>
-
-              <div>
-                <button
-                  type="submit"
-                  className="px-[4.6rem] py-[1.8rem] bg-white rounded-[1rem] text-[1.6rem] text-primaryDark font-semibold mt-8 duration-300 hover:bg-primaryDark hover:text-white border border-primaryDark hover:border-white"
-                >
-                  Submit
-                </button>
-              </div>
-            </form>
-          </div>
-
-          {/* Image */}
-          <div className="contact-img--container">
-            <div className="w-full h-full flex relative justify-center items-center px-[2rem] py-[9.6rem] ">
-              <p className="p-[2rem] text-[3rem] text-white border border-white leading-snug rounded-[1rem] md:p-[3rem] ">
-                "Prioritizing mental health and well-being in the workplace is
-                not just a compassionate act; it's an essential investment in
-                the overall success, productivity, and happiness of your team. A
-                mentally healthy workforce is a thriving workforce."
-              </p>
             </div>
           </div>
         </div>

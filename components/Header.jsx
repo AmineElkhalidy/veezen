@@ -1,12 +1,11 @@
 "use client";
+
 import React, { useState, useEffect } from "react";
-
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
-
 import Menu from "@/public/assets/icons/menu/menu.svg";
 import Close from "@/public/assets/icons/menu/close.svg";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -38,15 +37,19 @@ const Header = () => {
       <nav className="nav">
         <Link
           href="/"
-          className="capitalize font-semibold text-[22px] lg:text-[24px] text-black duration-300 hover:scale-110"
+          className="text-black/80 font-bold text-[2.2rem] lg:text-[2.4rem] "
         >
-          {/* <Image src={""} width={12} height={12} className="object-contain" /> */}
           Veezen
         </Link>
 
         {/* Mobile Nav */}
         {open ? (
-          <div className="nav-menu duration-300 lg:hidden">
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            className="nav-menu lg:hidden"
+          >
             <ul className="nav-list">
               <li>
                 <Link
@@ -87,7 +90,7 @@ const Header = () => {
 
               <li className="mt-4">
                 <Link
-                  className="main-nav-link nav-cta duration-300 bg-primary hover:bg-primaryDark"
+                  className="main-nav-link nav-cta duration-300 bg-primaryDark"
                   href={"/sign-up"}
                   onClick={() => setOpen(false)}
                 >
@@ -102,13 +105,13 @@ const Header = () => {
             >
               <Close className="w-12 h-12 font-semibold cursor-pointer duration-300 hover:text-primaryDark" />
             </button>
-          </div>
+          </motion.div>
         ) : (
           <button
             className="inline-block md:hidden"
             onClick={() => setOpen(true)}
           >
-            <Menu className="w-10 h-10 font-semibold cursor-pointer duration-300 hover:text-primaryDark" />
+            <Menu className="w-10 h-10 font-semibold cursor-pointer" />
           </button>
         )}
 
@@ -157,9 +160,9 @@ const Header = () => {
               </Link>
             </li>
 
-            <li className="mt-4 md:mt-0">
+            <li className="mt-4 md:mt-0 duration-300 hover:scale-105">
               <Link
-                className="main-nav-link nav-cta duration-300 bg-primary hover:bg-primaryDark"
+                className="main-nav-link nav-cta  bg-primaryDark "
                 href={"/sign-up"}
               >
                 Get Started

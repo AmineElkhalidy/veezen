@@ -1,10 +1,3 @@
-import React from "react";
-import Link from "next/link";
-
-import Phone from "@/public/assets/images/contact/phone.svg";
-import Email from "@/public/assets/images/contact/email.svg";
-import Map from "@/public/assets/images/contact/map.svg";
-
 const Contact = () => {
   return (
     <>
@@ -19,141 +12,166 @@ const Contact = () => {
         </div>
       </div>
 
-      <section className="my-20 max-w-[120rem] mx-auto px-[2rem] xl:px-0 ">
-        <div className="grid md:grid-cols-[2fr_1fr] gap-[12rem] md:gap-8">
-          {/* Form */}
-          <div>
-            <form className="cta-form">
-              <div>
-                <label htmlFor="first-name">First Name</label>
+      <div className="isolate bg-white px-6 py-8 sm:py-16 lg:px-8">
+        <form method="POST" className="mx-auto mt-8 max-w-4xl sm:mt-10">
+          <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+            <div>
+              <label
+                htmlFor="first-name"
+                className="block text-[1.7rem] font-medium leading-6 text-gray-900"
+              >
+                First name
+              </label>
+              <div className="mt-2.5">
                 <input
+                  type="text"
                   name="first-name"
                   id="first-name"
-                  type="text"
-                  placeholder="Your name"
-                  required
+                  autoComplete="given-name"
+                  className="block w-full rounded-md border-0 py-[1.3rem] text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primaryDark sm:leading-6"
                 />
               </div>
-
-              <div>
-                <label htmlFor="last-name">Last Name</label>
+            </div>
+            <div>
+              <label
+                htmlFor="last-name"
+                className="block text-[1.7rem] font-medium leading-6 text-gray-900"
+              >
+                Last name
+              </label>
+              <div className="mt-2.5">
                 <input
+                  type="text"
                   name="last-name"
                   id="last-name"
-                  type="text"
-                  placeholder="Last Name"
-                  required
+                  autoComplete="family-name"
+                  className="block w-full rounded-md border-0  py-[1.3rem] text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primaryDark sm:text-sm sm:leading-6"
                 />
               </div>
+            </div>
 
-              <div>
-                <label htmlFor="phone">Phone</label>
+            <div className="sm:col-span-2 mt-4">
+              <label
+                htmlFor="company"
+                className="block text-[1.7rem] font-medium leading-6 text-gray-900"
+              >
+                Company
+              </label>
+              <div className="mt-2.5">
                 <input
-                  name="phone"
-                  id="phone"
                   type="text"
-                  placeholder="Phone Number"
-                  required
+                  name="company"
+                  id="company"
+                  autoComplete="organization"
+                  className="block w-full rounded-md border-0 py-[1.3rem] text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primaryDark sm:text-sm sm:leading-6"
                 />
               </div>
-
-              <div>
-                <label htmlFor="email">Email address</label>
+            </div>
+            <div className="sm:col-span-2 mt-4">
+              <label
+                htmlFor="email"
+                className="block text-[1.7rem] font-medium leading-6 text-gray-900"
+              >
+                Email
+              </label>
+              <div className="mt-2.5">
                 <input
+                  type="email"
                   name="email"
                   id="email"
-                  type="email"
-                  placeholder="me@example.com"
-                  required
+                  autoComplete="email"
+                  className="block w-full rounded-md border-0 py-[1.3rem] text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primaryDark sm:text-sm sm:leading-6"
                 />
               </div>
-
-              <div className="lg:col-span-2">
-                <label htmlFor="message">Message</label>
+            </div>
+            <div className="sm:col-span-2 mt-4">
+              <label
+                htmlFor="phone-number"
+                className="block text-[1.7rem] font-medium leading-6 text-gray-900"
+              >
+                Phone number
+              </label>
+              <div className="relative mt-2.5">
+                <div className="absolute inset-y-0 left-0 flex items-center">
+                  <label htmlFor="country" className="sr-only">
+                    Country
+                  </label>
+                  <select
+                    id="country"
+                    name="country"
+                    className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primaryDark sm:text-sm"
+                  >
+                    <option>US</option>
+                    <option>CA</option>
+                    <option>EU</option>
+                  </select>
+                  <svg
+                    className="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <input
+                  type="tel"
+                  name="phone-number"
+                  id="phone-number"
+                  autoComplete="tel"
+                  className="block w-full rounded-md border-0 py-[1.3rem] pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primaryDark sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+            <div className="sm:col-span-2 mt-4">
+              <label
+                htmlFor="message"
+                className="block text-[1.7rem] font-medium leading-6 text-gray-900"
+              >
+                Message
+              </label>
+              <div className="mt-2.5">
                 <textarea
-                  className="resize-none"
                   name="message"
                   id="message"
-                  placeholder="Your message"
-                  rows={8}
+                  rows="4"
+                  className="block w-full rounded-md border-0 py-[1.3rem] text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primaryDark sm:text-sm sm:leading-6"
                 ></textarea>
               </div>
-
-              <div>
-                <button
-                  type="submit"
-                  className="px-[4.6rem] py-[1.8rem] bg-primaryDark rounded-[1rem] text-[1.6rem] text-white font-semibold mt-8 duration-300 hover:bg-primaryDark hover:text-white border border-primaryDark hover:border-white"
-                >
-                  Submit
-                </button>
-              </div>
-            </form>
-          </div>
-
-          {/* Social media */}
-          <div className="space-y-10">
-            <div className="max-w-lg mx-auto h-[170px] rounded-[1rem] bg-primaryLighter duration-300 group hover:bg-primaryDark">
-              <div className="h-full  justify-center flex flex-col items-center gap-8">
-                <Phone className="w-20 h-20 text-primaryDark group-hover:text-white" />
-
-                <div className="group-hover:text-gray-200 flex flex-col gap-2">
-                  <Link
-                    href="#"
-                    className="text-[1.6rem] duration-300 hover:text-white"
-                  >
-                    +212611111111
-                  </Link>
-
-                  <Link
-                    href="#"
-                    className="text-[1.6rem] duration-300 hover:text-white"
-                  >
-                    +212611111111
-                  </Link>
-                </div>
-              </div>
             </div>
-
-            <div className="max-w-lg mx-auto h-[170px] rounded-[1rem] bg-primaryLighter duration-300 group hover:bg-primaryDark">
-              <div className="h-full  justify-center flex flex-col items-center gap-8">
-                <Email className="w-20 h-20 text-primaryDark group-hover:text-white" />
-
-                <div className="group-hover:text-gray-200">
-                  <Link
-                    href="#"
-                    className="text-[1.6rem] duration-300 hover:text-white"
-                  >
-                    office@veezen.com
-                  </Link>
-                </div>
+            <div className="flex gap-x-4 sm:col-span-2">
+              <div className="flex h-6 items-center pt-px">
+                <label className="relative inline-flex items-center cursor-pointer">
+                  <input type="checkbox" value="" className="sr-only peer" />
+                  <div className="w-12 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute  after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all  peer-checked:bg-primaryDark"></div>
+                </label>
               </div>
-            </div>
-
-            <div className="max-w-lg mx-auto h-[170px] rounded-[1rem] bg-primaryLighter duration-300 group hover:bg-primaryDark">
-              <div className="h-full  justify-center flex flex-col items-center gap-8">
-                <Map className="w-20 h-20 text-primaryDark group-hover:text-white" />
-
-                <div className="text-center px-[1rem] group-hover:text-gray-200 flex flex-col gap-3">
-                  <Link
-                    href="#"
-                    className="text-[1.5rem] duration-300 hover:text-white"
-                  >
-                    Residence Chantimar, Rue N°3, Les princesses II, Maarif
-                    extension, Casablanca 20100, Morocco
-                  </Link>
-
-                  <Link
-                    href="#"
-                    className="text-[1.5rem] duration-300 hover:text-white"
-                  >
-                    78, Avenue des champs-Elysées, 75008 Paris, France
-                  </Link>
-                </div>
-              </div>
+              <label
+                className="text-[1.4rem] leading-6 text-gray-600"
+                id="switch-1-label"
+              >
+                By selecting this, you agree to our{" "}
+                <a href="#" className="font-semibold text-indigo-500">
+                  privacy&nbsp;policy
+                </a>
+                .
+              </label>
             </div>
           </div>
-        </div>
-      </section>
+          <div className="mt-10">
+            <button
+              type="submit"
+              className="block w-full rounded-lg bg-primaryDark py-5 text-center text-[1.7rem] font-semibold text-white shadow-sm"
+            >
+              Let's talk
+            </button>
+          </div>
+        </form>
+      </div>
     </>
   );
 };

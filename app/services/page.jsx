@@ -18,15 +18,17 @@ const Services = () => {
       {/* Services */}
       <section className="py-[9.6rem]">
         <div className="max-w-[120rem] py-[3rem] mx-auto px-[2rem] xl:px-0">
-          <span class="subheading">How it works</span>
-          <h2 class="heading-secondary">How can we help you?</h2>
+          <span className="subheading">How it works</span>
+          <h2 className="heading-secondary">How can we help you?</h2>
         </div>
 
-        <div class="max-w-[120rem] py-[3rem] md:py-0 mx-auto px-[2rem] xl:px-0 d-grid grid-cols-1 md:grid-cols-2 grid--center-v">
-          <div class="step-text-box">
-            <p class="step-number">01</p>
-            <h3 class="heading-tertiary">Assessment and Support Evaluation</h3>
-            <p class="step-description">
+        <div className="max-w-[120rem] py-[3rem] md:py-0 mx-auto px-[2rem] xl:px-0 d-grid grid-cols-1 md:grid-cols-2 grid--center-v">
+          <div className="step-text-box">
+            <p className="step-number">01</p>
+            <h3 className="heading-tertiary">
+              Assessment and Support Evaluation
+            </h3>
+            <p className="step-description">
               : In the initial stage, we conduct a comprehensive assessment of
               the individual's mental health and well-being needs. Our expert
               team evaluates the specific challenges and stressors they may face
@@ -34,27 +36,27 @@ const Services = () => {
               support strategies.
             </p>
           </div>
-          <div class="step-image-box">
+          <div className="step-image-box">
             <img
               src="/assets/images/home/1.svg"
               alt="Picture"
-              class="step-image"
+              className="step-image"
             />
           </div>
 
-          <div className="mb-20 md:hidden"></div>
+          <div classNameName="mb-20 md:hidden"></div>
 
-          <div class="step-image-box">
+          <div className="step-image-box">
             <img
               src="/assets/images/home/2.svg"
               alt="Picture"
-              class="step-image"
+              className="step-image"
             />
           </div>
-          <div class="step-text-box">
-            <p class="step-number">02</p>
-            <h3 class="heading-tertiary">Personalized Well-being Plans</h3>
-            <p class="step-description">
+          <div className="step-text-box">
+            <p className="step-number">02</p>
+            <h3 className="heading-tertiary">Personalized Well-being Plans</h3>
+            <p className="step-description">
               : Based on the assessment results, we create personalized
               well-being plans. These plans include a range of interventions,
               such as stress management techniques, resilience-building
@@ -66,10 +68,10 @@ const Services = () => {
 
           <div className="mb-20 md:hidden"></div>
 
-          <div class="step-text-box">
-            <p class="step-number">03</p>
-            <h3 class="heading-tertiary">Ongoing Support and Resources</h3>
-            <p class="step-description">
+          <div className="step-text-box">
+            <p className="step-number">03</p>
+            <h3 className="heading-tertiary">Ongoing Support and Resources</h3>
+            <p className="step-description">
               : We understand that well-being is an ongoing journey. Our
               services offer continuous support, including access to mental
               health professionals, workshops, and educational resources. We aim
@@ -78,11 +80,11 @@ const Services = () => {
               workplace.
             </p>
           </div>
-          <div class="step-image-box">
+          <div className="step-image-box">
             <img
               src="/assets/images/home/3.svg"
               alt="Picture"
-              class="step-image"
+              className="step-image"
             />
           </div>
         </div>
@@ -176,7 +178,7 @@ const Services = () => {
             <img
               src="/assets/images/home/2.jpg"
               alt="Photo of a happy client"
-              srcset=""
+              srcSet=""
               loading="lazy"
             />
           </figure>
@@ -184,7 +186,7 @@ const Services = () => {
             <img
               src="/assets/images/home/3.jpg"
               alt="Photo of a happy client"
-              srcset=""
+              srcSet=""
               loading="lazy"
             />
           </figure>
@@ -192,7 +194,7 @@ const Services = () => {
             <img
               src="/assets/images/home/4.jpg"
               alt="Photo of a happy client"
-              srcset=""
+              srcSet=""
               loading="lazy"
             />
           </figure>
@@ -200,7 +202,7 @@ const Services = () => {
             <img
               src="/assets/images/home/5.jpg"
               alt="Photo of a happy client"
-              srcset=""
+              srcSet=""
               loading="lazy"
             />
           </figure>
@@ -208,7 +210,7 @@ const Services = () => {
             <img
               src="/assets/images/home/6.jpg"
               alt="Photo of a happy client"
-              srcset=""
+              srcSet=""
               loading="lazy"
             />
           </figure>
@@ -216,7 +218,7 @@ const Services = () => {
             <img
               src="/assets/images/home/7.jpg"
               alt="Photo of a happy client"
-              srcset=""
+              srcSet=""
               loading="lazy"
             />
           </figure>
@@ -224,7 +226,7 @@ const Services = () => {
             <img
               src="/assets/images/home/8.jpg"
               alt="Photo of a happy client"
-              srcset=""
+              srcSet=""
               loading="lazy"
             />
           </figure>
@@ -232,7 +234,7 @@ const Services = () => {
             <img
               src="/assets/images/home/9.jpg"
               alt="Photo of a happy client"
-              srcset=""
+              srcSet=""
               loading="lazy"
             />
           </figure>
@@ -240,7 +242,7 @@ const Services = () => {
             <img
               src="/assets/images/home/10.jpg"
               alt="Photo of a happy client"
-              srcset=""
+              srcSet=""
               loading="lazy"
             />
           </figure>
@@ -248,7 +250,7 @@ const Services = () => {
             <img
               src="/assets/images/home/11.jpg"
               alt="Photo of a happy client"
-              srcset=""
+              srcSet=""
               loading="lazy"
             />
           </figure>
@@ -256,7 +258,7 @@ const Services = () => {
             <img
               src="/assets/images/home/12.jpg"
               alt="Photo of a happy client"
-              srcset=""
+              srcSet=""
               loading="lazy"
             />
           </figure>

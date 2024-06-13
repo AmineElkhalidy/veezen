@@ -34,7 +34,7 @@ img {
 }
 
 .section {
-  @apply pt-[12rem] py-[10rem];
+  @apply pt-[12rem] pb-[10rem];
 }
 
 .d-grid {

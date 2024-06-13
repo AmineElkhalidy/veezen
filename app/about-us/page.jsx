@@ -1,10 +1,8 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
 
 import Facebook from "@/public/assets/icons/footer/facebook.svg";
 import Instagram from "@/public/assets/icons/footer/instagram.svg";
-import Whatsapp from "@/public/assets/icons/footer/whatsapp.svg";
 import Linkedin from "@/public/assets/icons/footer/linkedin.svg";
 
 const About = () => {
@@ -21,20 +19,20 @@ const About = () => {
         </div>
       </div>
 
-      <section class="py-[8rem]">
-        <div class="max-w-[120rem] py-[3rem] mx-auto flex flex-col gap-40 px-[2rem] md:flex-row xl:px-0 lg:gap-20">
-          <div class="text-center md:text-left md:w-full">
-            <h2 class="heading-secondary" style={{ marginBottom: 0 }}>
+      <section className="py-[8rem]">
+        <div className="max-w-[120rem] py-[3rem] mx-auto flex flex-col gap-40 px-[2rem] md:flex-row xl:px-0 lg:gap-20">
+          <div className="text-center md:text-left md:w-full">
+            <h2 className="heading-secondary" style={{ marginBottom: 0 }}>
               Get to know about us
             </h2>
-            <p class="hero-description mt-10">
+            <p className="hero-description mt-10">
               Veezen: Shaping Workplace Well-being. We specialize in
               transforming workplaces into nurturing, mental-health-focused
               environments, fostering employee happiness and business success.
             </p>
           </div>
 
-          <div class="text-center self-center md:w-full">
+          <div className="text-center self-center md:w-full">
             <Image
               src="/assets/images/home/hero.svg"
               width={450}
@@ -45,9 +43,9 @@ const About = () => {
         </div>
       </section>
 
-      <section class="py-[6rem] ">
-        <div class="max-w-[120rem] py-[3rem] mx-auto flex flex-col gap-40 px-[2rem] md:flex-row xl:px-0 lg:gap-20">
-          <div class="text-center self-center md:w-full">
+      <section className="py-[6rem] ">
+        <div className="max-w-[120rem] py-[3rem] mx-auto flex flex-col gap-40 px-[2rem] md:flex-row xl:px-0 lg:gap-20">
+          <div className="text-center self-center md:w-full">
             <Image
               src="/assets/images/about/social-media.svg"
               width={450}
@@ -56,21 +54,17 @@ const About = () => {
             />
           </div>
 
-          <div class="text-center md:text-left md:w-full">
-            <h2 class="heading-secondary" style={{ marginBottom: 0 }}>
+          <div className="text-center md:text-left md:w-full">
+            <h2 className="heading-secondary" style={{ marginBottom: 0 }}>
               We are <span className="text-primaryDark">available</span> on all
               of the{" "}
               <span className="text-primaryDark">Social Media Platforms</span>
             </h2>
-            <p class="hero-description mt-10">
+            <p className="hero-description mt-10">
               Veezen: Shaping Workplace Well-being. We specialize in
               transforming workplaces into nurturing, mental-health-focused
               environments, fostering employee happiness and business success.
             </p>
-
-            {/* <Link href="/about-us" class="btn btn--primary">
-              Learn more
-            </Link> */}
           </div>
         </div>
       </section>
@@ -78,8 +72,8 @@ const About = () => {
       {/* Why choose us */}
       <section className="py-[9.6rem] bg-primaryLighter">
         <div className="max-w-[120rem] py-[3rem] mx-auto px-[2rem] xl:px-0 text-center">
-          <span class="subheading">Why?</span>
-          <h2 class="heading-secondary">Why choose us</h2>
+          <span className="subheading">Why?</span>
+          <h2 className="heading-secondary">Why choose us</h2>
         </div>
 
         <div className="max-w-[120rem] py-[3rem] mx-auto px-[2rem] xl:px-0 d-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
