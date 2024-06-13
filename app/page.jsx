@@ -10,7 +10,7 @@ export default function Home() {
         <div className="container flex flex-col gap-[10rem] md:flex-row lg:gap-[5rem]">
           <div className="text-center md:text-left md:w-full">
             <h1 className="heading-primary text-[5.2rem] mb-[3.2rem] leading-tight">
-              Mental Health & Well-being in the Workplace
+              Mental Health & Well-being at Workplace
             </h1>
 
             <p className="hero-description">
